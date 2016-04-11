@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title>Micro Interaction Metrics for Defect Prediction</title>
+	<style> 
+		body{
+			font-family: AppleGothic,Helvetica;
+		}
+		#sectionbody{
+			margin-left: 40px;
+			width: 630px;
+			text-align:justify;
+		}
+		#lastupdated{
+			margin-top: 40px;
+		}
+		a{
+			color: #648239;
+		}
+		#profileImg{
+			float: left;
+		}
+		#personalInfo li{
+			list-style: none;
+			margin-left: -20px;
+		}
+ 
+		.icon{
+			margin-right: 5px;
+		}
+		#alg{
+			color: orange;
+		}
+ 
+	</style> 
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2126123-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+</script>
+</head>
+<body>
+<hr/>
+<h1>Micro Interaction Metrics for Defect Prediction</h1>
+<hr/>
+<h2>Introduction</h2>
+<div id="sectionbody">
+There is a common belief that developers' behavioral interaction patterns may affect software quality. However, widely used defect prediction metrics such as software complexity metrics, change churns, and the number of previous defects do not capture developers' direct interactions. 
+We propose 56 novel micro interaction metrics (MIMs) that leverage developers' interaction information stored in the Mylyn data. Mylyn is an Eclipse plug-in, which captures developers' interactions such as file editing and selection events with time spent. To evaluate the performance of MIMs in defect prediction, we build defect prediction (classification and regression) models using MIMs, traditional metrics, and their combinations. Our experimental results show that MIMs significantly improve defect classification and regression accuracy.
+</div>
+<h2>Data Sets for Experiments</h2>
+<div id="sectionbody">
+We provide data sets (arff files for Weka) to reproduce our experimental results. (Also, you can download all datasets in a zip file. <a href="datasets/datasets.zip">datasets.zip</a>)
+	<ul> 
+		<li>Section 4.2.1 Different subjects. (Please, click your mouse-right button on each link and save it.)
+			<ul> 
+				<li>Subject All: <a href="datasets/4.2.1_different_subjects/subject_all_MIM+CM+HM.arff">MIM+CM+HM</a>, <a href="datasets/4.2.1_different_subjects/subject_all_MIM.arff">MIM</a>, <a href="datasets/4.2.1_different_subjects/subject_all_CM+HM.arff">CM+HM</a>, <a href="datasets/4.2.1_different_subjects/subject_all_CM.arff">CM</a>, <a href="datasets/4.2.1_different_subjects/subject_all_HM.arff">HM</a></li>
+				<li>Subject Mylyn: <a href="datasets/4.2.1_different_subjects/subject_mylyn_MIM+CM+HM.arff">MIM+CM+HM</a>, <a href="datasets/4.2.1_different_subjects/subject_mylyn_MIM.arff" >MIM</a>, <a href="datasets/4.2.1_different_subjects/subject_mylyn_CM+HM.arff" >CM+HM</a>, <a href="datasets/4.2.1_different_subjects/subject_mylyn_CM.arff" >CM</a>, <a href="datasets/4.2.1_different_subjects/subject_mylyn_HM.arff" >HM</a></li>
+				<li>Subject Team: <a href="datasets/4.2.1_different_subjects/subject_team_MIM+CM+HM.arff">MIM+CM+HM</a>, <a href="datasets/4.2.1_different_subjects/subject_team_MIM.arff">MIM</a>, <a href="datasets/4.2.1_different_subjects/subject_team_CM+HM.arff">CM+HM</a>, <a href="datasets/4.2.1_different_subjects/subject_team_CM.arff">CM</a>, <a href="datasets/4.2.1_different_subjects/subject_team_HM.arff">HM</a></li>
+				<li>Etc.: <a href="datasets/4.2.1_different_subjects/subject_etc_MIM+CM+HM.arff">MIM+CM+HM</a>, <a href="datasets/4.2.1_different_subjects/subject_etc_MIM.arff">MIM</a>, <a href="datasets/4.2.1_different_subjects/subject_etc_CM+HM.arff">CM+HM</a>, <a href="datasets/4.2.1_different_subjects/subject_etc_CM.arff">CM</a>, <a href="datasets/4.2.1_different_subjects/subject_etc_HM.arff">HM</a></li>
+			</ul>
+		</li>
+		<li>Section 4.2.2 Different Machine Learner
+			<ul>
+				<li><a href="datasets/4.2.2_different_machine_learner/MIM+CM+HM.arff">MIM+CM+HM</a>, <a href="datasets/4.2.2_different_machine_learner/MIM.arff">MIM</a>, <a href="datasets/4.2.2_different_machine_learner/CM+HM.arff">CM+HM</a>, <a href="datasets/4.2.2_different_machine_learner/CM.arff">CM</a>, <a href="datasets/4.2.2_different_machine_learner/HM.arff">HM</a></li>
+			</ul>
+		</li>
+		<li>Section 4.2.3 Different Split Points
+			<ul>
+				<li>5:5 Time Split: <a href="datasets/4.2.3_different_split_points/5_5_MIM+CM+HM.arff">MIM+CM+HM</a>, <a href="datasets/4.2.3_different_split_points/5_5_MIM.arff">MIM</a>, <a href="datasets/4.2.3_different_split_points/5_5_CM+HM.arff">CM+HM</a>, <a href="datasets/4.2.3_different_split_points/5_5_CM.arff">CM</a>, <a href="datasets/4.2.3_different_split_points/5_5_HM.arff">HM</a></li>
+			</ul>
+			<ul>
+				<li>7:3 Time Split: <a href="datasets/4.2.3_different_split_points/7_3_MIM+CM+HM.arff">MIM+CM+HM</a>, <a href="datasets/4.2.3_different_split_points/7_3_MIM.arff">MIM</a>, <a href="datasets/4.2.3_different_split_points/7_3_CM+HM.arff">CM+HM</a>, <a href="datasets/4.2.3_different_split_points/7_3_CM.arff">CM</a>, <a href="datasets/4.2.3_different_split_points/7_3_HM.arff">HM</a></li>
+			</ul>
+			<ul>
+				<li>8:2 Time Split: <a href="datasets/4.2.3_different_split_points/8_2_MIM+CM+HM.arff">MIM+CM+HM</a>, <a href="datasets/4.2.3_different_split_points/8_2_MIM.arff">MIM</a>, <a href="datasets/4.2.3_different_split_points/8_2_CM+HM.arff">CM+HM</a>, <a href="datasets/4.2.3_different_split_points/8_2_CM.arff">CM</a>, <a href="datasets/4.2.3_different_split_points/8_2_HM.arff">HM</a></li>
+			</ul>
+		</li>
+		<li>Section 4.3 Predicting Defect Numbers
+			<ul>
+				<li><a href="datasets/4.3_predicting_defect_numbers/MIM+CM+HM_with_defect_numbers.arff">MIM+CM+HM</a>, <a href="datasets/4.3_predicting_defect_numbers/MIM_with_defect_numbers.arff">MIM</a>, <a href="datasets/4.3_predicting_defect_numbers/CM+HM_with_defect_numbers.arff">CM+HM</a>, <a href="datasets/4.3_predicting_defect_numbers/CM_with_defect_numbers.arff">CM</a>, <a href="datasets/4.3_predicting_defect_numbers/HM_with_defect_numbers.arff">HM</a></li>
+			</ul>
+		</li>
+		<li>Section 4.4 Predicting CVS-log-based Defects
+			<ul>
+				<li><a href="datasets/4.4_predicting_cvs_based_defects/MIM+CM+HM_based_on_cvs.arff">MIM+CM+HM</a>, <a href="datasets/4.4_predicting_cvs_based_defects/MIM_based_on_cvs.arff">MIM</a>, <a href="datasets/4.4_predicting_cvs_based_defects/CM+HM_based_on_cvs.arff">CM+HM</a>, <a href="datasets/4.4_predicting_cvs_based_defects/CM_based_on_cvs.arff">CM</a>, <a href="datasets/4.4_predicting_cvs_based_defects/HM_based_on_cvs.arff">HM</a></li>
+			</ul>
+		</li>
+	</ul> 
+	To reproduce experimental results with the above data sets, Please, follow the steps below:
+	<ul>
+		<li>Download a Weka 3.6.1 archive file (<a href="http://sourceforge.net/projects/weka/files/weka-3-6/3.6.1/">download</a>) and get "<font color=green>weka.jar</font>" in the zip file</li>
+		<li>Run a command with <font color="orange">a specific machine learning algorithm</font> and <font color="brown">one of arff files</font> above:
+			<ul>
+				<li><font color="blue">java -Xmx1024m -cp <font color=green>weka.jar</font> <font id="alg">weka.classifiers.trees.J48</font> -t <font color="brown">put_file_name.arff</font> -x 10 -i -o -s 1</font></li>
+				<li>For different algorithms, you can replace "<font color="orange">weka.classfier.trees.J48</font>" into as follows:
+					<ul>
+						<li><font id="alg">weka.classifiers.bayes.BayesNet</font> (Pleaes, add "-D" option for this algorithm.)</li>
+						<li><font id="alg">weka.classifiers.functions.Logistic</font></li>
+					</ul>
+				</li>
+				<li>Option "-x 10": 10-fold cross validation</li>
+				<li>Option "-s 1": defining a seed for generating random folds (need to change 1 into other numbers to get different results for each trial.)</li>
+				<li>For other options, please refer <a href="http://weka.wikispaces.com/Primer" target=_new>http://weka.wikispaces.com/Primer</a>
+			</ul>
+		</li>
+		<li> Results from the command running display many infomation Weka provides.
+	  The value we are interesting is F-measure of "buggy" Class
+      Please, see F-measure value of "buggy" Class under "=== Stratified cross-validation ===" line.</li>
+	</ul>
+	* For MIMs, each metric name matched in Appendix defined here. (<a href="datasets/mim_metric_names.csv">names of MIMs</a>)
+</div>
+<h2>Publication</h2>
+<div id="sectionbody">
+	<ul> 
+		<li>Taek Lee, Jaechang Nam, Donggyun Han, Sunghun Kim and Hoh Peter In, Micro Interaction Metrics for Defect Prediction, <i>in Proceedings of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2011)</i>, Szeged, Hungary, September 5-9, 2011. [<a href="http://www.cse.ust.hk/~hunkim/images/c/c2/Mim_fse2011.pdf">PDF</a>]</li>
+	</ul> 
+</div>
+<h2>Project Members</h2>
+<div id="sectionbody">
+	<ul> 
+		<li>Taek Lee (comtaek [at] korea.ac.kr)</li>
+		<li>Jaechang Nam (jcnam [at] cse.ust.hk)</li>
+		<li>Donggyun Han (handk [at] cse.ust.hk)</li>
+		<li>Sunghun Kim (hunkim [at] cse.ust.hk)</li>
+		<li> Hoh Peter In (hoh_in [at] korea.ac.kr)</li>
+	</ul> 
+	If you have any comments/questions regarding the research work or the tool,  please feel free to contact any of the project members.
+</div>
+<div id="lastupdated">
+<script language="JavaScript"> 
+	<!-- Hide JavaScript...
+	var LastUpdated = document.lastModified;
+	document.writeln ("Last updated on " + LastUpdated  + "GMT.");
+	// End Hiding -->
+</script> 
+</div>
+	
+</body>
+</html>

@@ -1,1 +1,363 @@
-Hello World
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jaechang Nam</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" />
+
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js"><\/script>')</script>
+
+    <script src="js/jquery.smoothscroll.js"></script>
+    <script src="js/jquery.nivo.slider.pack.js"></script>
+    <script src="js/jquery.easing-1.3.pack.js"></script>
+    <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="js/init.js"></script>
+    
+    <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2126123-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		
+		var minutes=1000*60;
+		var hours=minutes*60;
+		var days=hours*24;
+		var years=days*365;
+		var d=new Date();
+		var t=d.getTime();
+		
+		// change startTime in a new place and put dayIncrement in the new place
+		var startTime = 1441843200000; //http://www.fileformat.info/tip/java/date2millis.htm 2015/09/10 // 2015/08/13   1325999001896; // 2012/01/08
+		var dayIncrement = Math.round(t/days - startTime/days);
+				
+		google.load('visualization', '1', {'packages': ['geochart']});
+		google.setOnLoadCallback(drawRegionsMap);
+
+		function drawRegionsMap() {
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Country');
+		data.addColumn('number', '#Days (approximated)');
+		data.addRows([
+		['South Korea', 10277],
+		['Canada', 1+dayIncrement-13],
+		['United States', 58],
+		['Italy', 7],
+		['Sweden', 500],
+		['Denmark', 4],
+		['China', 2128],
+		['Germany',94],
+		['Norway', 4],
+		['Poland', 1],
+		['France', 5],
+		['Luxembourg', 1],
+		['GB', 2]
+	      ]);
+
+		var options = {width: 950, height: 561, colors:['green','blue']};
+
+		var container = document.getElementById('travel');
+		var geochart = new google.visualization.GeoChart(container);
+		geochart.draw(data, options);
+		};
+	</script>
+
+</head>
+
+<body>
+
+<!-- header-wrap -->
+<div id="header-wrap">
+    <header>
+
+        <hgroup>
+            <h1><a href="index.html">JC Nam</a></h1>
+            <h3>Postdoctoral Fellow @ UWaterloo</h3>
+        </hgroup>
+
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                 <li><a href="#service">Service</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#others">Others</a></li>
+            </ul>
+        </nav>
+
+    </header>
+</div>
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+    <!-- main -->
+    <section id="main">
+
+        <div class="intro-box">
+           <h1>JC Nam</h1>
+
+           <p class="intro">
+		Postdoctoral Fellow
+		<br>
+		<br>
+		<a href=https://uwaterloo.ca/electrical-computer-engineering/ target=_NEW>Electrical and Computer Engineering</a>
+		<br>
+		<a href=https://uwaterloo.ca/ target=_NEW>University of Waterloo</a>
+		<br>
+		<b>Email: </b>jc.nam /at/ uwaterloo.ca
+		<br>
+		<b>Phone: </b>(519) 888-4567 extension 31718
+           </p>
+
+           <!--<p class="intro">Learn more <a href="#about-us">about us</a>  or <a href="#contact">get in touch</a> if you want to hire us on your next project.</p>-->
+
+        </div>
+
+        <div class="slider-wrapper">
+
+            <div id="slider" class="nivoSlider">
+                <img src="img/jc.png" width="383" height="198" alt="" />
+               <img src="img/ASE2015.jpg" width="383" height="198" alt="" title="#fse2015" /> 
+		<img src="img/clami.png" width="383" height="198" alt="" title="#defectprediction" />
+		<img src="img/HDP.png" width="383" height="198" alt="" title="#HDP" />
+            </div>
+            
+            <div id="fse2015" class="nivo-html-caption">
+                <strong>Visit</strong> <a href="http://ase2015.unl.edu/" target=_NEW>ASE 2015</a>!
+            </div>
+<div id="HDP" class="nivo-html-caption">                Heterogeneous Defect Prediction (HDP) has been accepted for <a href="http://esec-fse15.dei.polimi.it/index.html" target=_NEW>ESEC/FSE2015</a>!
+            </div>
+             <div id="defectprediction" class="nivo-html-caption">
+                "CLAMI: Defect Prediction on Unlabeled Datasets" has been accpeted for <a href="http://ase2015.unl.edu/" target=_NEW>ASE2015</a>!
+            </div>
+        </div>
+
+        <div class="row no-bottom-margin">
+
+            <section class="col">
+                <h2>Hello</h2>
+		<p>I'm JC (Jaechang Nam, 남재창 in Korean, and 南載昌 in Chinese) and a postdoctoral fellow working in Prof. <a href=http://ece.uwaterloo.ca/~lintan/ target=_NEW>Lin Tan</a>'s research group. If you want to see me at UWaterloo, please make an appointment and find me at DC 2639.</p>
+
+            </section>
+            <section class="col mid">
+                <h2>Research</h2>
+                My research interests include:
+	<ul>
+                		<li>Software Quality Prediction</li>
+				<li>Transfer Learning in Software Engineering</li>
+                		<li>Software Repository Mining</li>
+                		<li>Empirical Software Engineering</li>
+				<li>Software Engineering in eHealth</li>
+	</ul>
+            </section>
+
+            <section class="col">
+                <h2>Recent Publication</h2>
+
+                <p><img alt="Image:new.gif" src="http://www.cse.ust.hk/~hunkim/images/e/e0/New.gif" width="28" height="11" border="0"> My recent paper entitled "CLAMI: Defect Prediction on Unlabeled Datasets</a>" has been accepted for <a href="http://ase2015.unl.edu/" /target=_NEW>the 30th IEEE/ACM International Conference on Automated Software Engineering (ASE 2015)</a>.</p>
+                <p><a href="#publications">See</a> complete list of my publications.</p>
+            </section>
+        </div>
+
+        <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+
+      <!-- services -->
+      <section id="publications" >
+
+            <h1>Publications.</h1>
+		<h2>Journal/Conference/Workshop Papers</h2>
+				<ul>
+				<li><img alt="Image:new.gif" src="http://www.cse.ust.hk/~hunkim/images/e/e0/New.gif" width="28" height="11" border="0">Taek Lee, Jaechang Nam, Donggyun Han, Sunghun Kim, and Hoh Peter In, <b>Developer Micro Interaction Metrics for Software Defect Prediction</b>, <i>IEEE Transactions on Software Engineering (TSE)</i> [<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7447797" target=_NEW>IEEE Xplore</a>]</li>
+				<li><img alt="Image:new.gif" src="http://www.cse.ust.hk/~hunkim/images/e/e0/New.gif" width="28" height="11" border="0">Jaechang Nam and Sunghun Kim, <b>CLAMI: Defect Prediction on Unlabeled Datasets</b>, <i>in Proceedings of the 30th IEEE/ACM International Conference on Automated Software Engineering (ASE 2015)</i>, Lincoln, Nebraska, USA, November 9 - 13, 2015. [<a href=files/CLAMI_ASE.pdf target=_NEW>PDF</a>]</li>
+				<li>Jaechang Nam and Sunghun Kim, <b>Heterogeneous Defect Prediction</b>, <i>in Proceedings of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2015)</i>, Bergamo, Italy, August 31 - September 4, 2015. [<a href=files/HDP_FSE2015.pdf target=_NEW>PDF</a>]</li>
+<li>Mijung Kim, Jaechang Nam, Jaehyuk Yeon, Soonhwang Choi, and Sunghun Kim<b>, REMI: Defect Prediction for Efficient API Testing</b>, <i>in Proceedings of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2015, Industrial track)</i>, Bergamo, Italy, August 31 - September 4, 2015. [<a href=http://www.cse.ust.hk/~hunkim/papers/kim-REMI(industry)-fse2015.pdf target=_NEW>PDF</a>]</li>
+				<li><!--<img alt="Image:new.gif" src="http://www.cse.ust.hk/~hunkim/images/e/e0/New.gif" width="28" height="11" border="0">--> Dongsun Kim, Jaechang Nam, Jaewoo Song, and Sunghun Kim, 
+				<b>Automatic Patch Generation Learned from Human-written Patches</b>, <i>in Proceedings of 35th International Conference on Software Engineering (ICSE 2013)</i>, San Francisco, May 18-26, 2013. [<a href="http://www.slideshare.net/hunkim/automatic-patch-generation-learned-from-human-written-patches" target=_NEW>Slides <img alt="Image:slideshare" src="http://www.cse.ust.hk/~hunkim/skins/monobook/slideshare.jpeg" width="15" border="0"></a>] ACM SIGSOFT Distinguished Paper Award Winner <img border=0 height=20pt src=http://www.cse.ust.hk/~hunkim/images/award-icon.gif>  [<a href=http://www.cse.ust.hk/~hunkim/papers/kim-icse2013.pdf target=_NEW>PDF</a>]
+				</li>
+				<li><!--<img alt="Image:new.gif" src="http://www.cse.ust.hk/~hunkim/images/e/e0/New.gif" width="28" height="11" border="0">--> Jaechang Nam, Sinno Jialin Pan, and Sunghun Kim,
+				<b>Transfer Defect Learning</b>, <i>in Proceedings of 35th International Conference on Software Engineering (ICSE 2013)</i>, San Francisco, May 18-26, 2013. [<a href="http://www.slideshare.net/hunkim/transfer-defectlearningnew-completed" target=_NEW>Slides <img alt="Image:slideshare" src="http://www.cse.ust.hk/~hunkim/skins/monobook/slideshare.jpeg" width="15" border="0"></a>] Nominee,  ACM SIGSOFT Distinguished Paper Award [<a href="https://sites.google.com/site/transferdefect/" target=_NEW>LINK</a>]
+				</li>
+				<li>Taek Lee, Jaechang Nam, Donggyun Han, Sunghun Kim, and Hoh Peter In, <b>Micro Interaction Metrics for Defect Prediction</b>, <i>in Proceedings of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2011)</i>, Szeged, Hungary, September 5-9, 2011. [<a href="mim/">LINK</a>]</li> 
+				<li>Jaechang Nam, David Schuler, and Andreas Zeller, <b>Calibrated Mutation Testing</b>, <i>in Proceedings of the 4th International Workshop on Mutation Analysis (Mutation 2011)</i>, Berlin, 2011. [<a href=http://www.st.cs.uni-saarland.de/publications/details/nam-mutation-2011/ target=_NEW>PDF</a>]</li> 
+				<li>Jaechang Nam, <b>Trust Framework of Ubiquitous Healthcare with Advanced Petri Net Model</b>, <i>in Proceeding of First International ICST Conference on Electronic Healthcare for the 21st century (eHealth 2008)</i>, London, 2008. [<a href=http://www.springerlink.com/content/k26822l03x264627/ target=_NEW>PDF</a>]</li>
+				
+			</ul>
+	
+	<h2>Technical/Project Report</h2>
+			<ul> 
+				<li>Jaechang Nam, <b>Survey on Software Defect Prediction</b>, HKUST PhD Qualifying Examination, July 3, 2014. [<a href=files/PQE_Survey_JC.pdf>PDF</a>] [<a href=http://www.slideshare.net/lifove/survey-on-software-defect-prediction-36860569 target=_NEW>Slide</a>]
+				<li>Daniel Dietsch, Andreas Podelski, Jaechang Nam, Pantelis M. Papadopoulos, and Martin Schäf, <b>Monitoring Student Activity in Collaborative Software Development</b>, arXiv:1305.0787 [cs.CY], 2013. [<a href=http://arxiv.org/abs/1305.0787 target=_NEW>PDF</a>]</li>
+				<li>Jaechang Nam and Ning Chen, <b>Mining Crash Fix Patterns</b>, arXiv:1311.1895 [cs.SE], 2013. [<a href=http://arxiv.org/abs/1311.1895 target=_NEW>PDF</a>]</li>
+			</ul> 
+	<h2>Dissertation</h2>
+			<ul> 
+				<li>Jaechang Nam, <i><b>Software Defect Prediction on Unlabeled Datasets</b></i>, PhD Thesis, 2015.</li>
+				<li>Jaechang Nam, <i><b>Component Reusability Analysis for Exchanging Electronic Health Records</b></i>, Master's Thesis, 2009. [<a href=http://www.bth.se/fou/cuppsats.nsf/774564d376efaa0cc1256cec0031533e/b6be8b94010c2138c1257634005463e0!OpenDocument target=_NEW>PDF</a>]</li>
+			</ul> 
+
+            <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+     
+      <!-- Education -->
+      <section id="education">
+
+            <h1>Education</h1>
+	<ul> 
+		<li>2009 ~ 2015 : <a href="http://www.cse.ust.hk/" target=_NEW>The Hong Kong University of Science and Technology</a>, Hong Kong - PhD in Computer Science and Engineering
+		<li>2007 ~ 2009 : <a href="http://www.bth.se">Blekinge Institute of Technology</a>, Sweden - Master of Science (MSc) in Computer Science </li> 
+		<li>1998 ~ 2002 : <a href="http://www.handong.edu">Handong Global University</a>, Korea - Bachelor of Management / Engineering in  Computer Science </li> 
+	</ul>
+            <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+      
+      <!-- Work Experience -->
+      <section id="work">
+
+            <h1>Work Experience</h1>
+            	<ul>
+				<li><a href="https://ece.uwaterloo.ca/~lintan/students.html" target=_NEW>Postdoctoral Fellow</a> @<a  href="http://www.ece.uwaterloo.ca/" target=_NEW>Electrical and Computer Engineering</a> at <a href="http://uwaterloo.ca" target=_NEW>University of Waterloo</a>, ON, Canada, Sep. 2015 ~ now.</li>
+            			<li><a href="https://iist.unu.edu/people/jcnam" target=_NEW>Fellow</a> @<a  href="http://iist.unu.edu/" target=_NEW>International Institute for Software Techinlogy</a> at United Nations University, Macau, Jun. 2012 ~ Aug. 2013.</li>
+            			<li>Instructor @<a href=http://www.yust.edu/ target=_NEW>Yanbian University of Science and Technology</a>, China, Course: Software Engineering, 2012 Summer.
+			<li>Internship @<a href="http://www.st.cs.uni-saarland.de" target=_NEW>Software Engineering Chair</a> at Saarland University, Germany, Jun. 2010 ~ Aug. 2010.</li> 
+			<li>Teaching Assistant @<a href=http://www.cse.ust.hk target=_NEW>CSE Department</a> at <a href=http://www.ust.hk target=_NEW>HKUST</a>
+				<br>COMP3111/H: Introduction to Software Engineering (2010 Spring:Lab, 2011 Spring:Lab, 2012 Spring:Project Master, 2013 Fall:Tutorial and Lab, and 2014 Spring:Project Master.)
+				<br>COMP1022P: Introduction to Computing with Java (2011 Fall)
+			</li>
+			<li>Freelance Software Engineer, Korea, Oct. 2005 ~ Jun. 2007.</li> 
+			<li>Program Development Officer (First lieutenant) @The 2nd Logistics Support Command in R.O.K. Army, Oct. 2003 ~ Jun. 2005.</li> 
+			<li>Head of Computer Center (Second lieutenant) @The 16th Supply Battalion in R.O.K. Army, Sep. 2002 ~ Sep. 2003.</li> 
+			<li>Research Assistant @GIS institute at Handong Global University, Korea, Jun. 1999 ~ Dec. 2001.</li>
+	</ul>
+            <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+      
+       <!-- Service -->
+      <section id="service">
+
+            <h1>Academic Service</h1>
+            		<ul>
+			<li><a href="http://www.elsevier.com/locate/infsof/" target=_NEW>Information and Software Technology (Elsevier)</a>, 2016, Reviewer</li>
+			 <li><a href="http://www.computer.org/web/tse" target=_NEW>IEEE Transaction on Software Engineering</a>, 2015, 2016, Reviewer</li>		
+			<li><a href="http://www.springer.com/computer/swe/journal/11219" target=_NEW>Software Quality Journal (Springer)</a>, 2016, Reviewer</li>
+			<li><a href="http://saner.inf.usi.ch/" target=_NEW>The 23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER 2016)</a>, Subreviewer</li>
+			<li><a href="http://www.springer.com/computer/swe/journal/10664" target=_NEW>Empirical Software Engineering (Springer)</a>, 2013, 2015, Reviewer</li>
+			<li><a href="http://2015.msrconf.org/" target=_NEW>The 12th Working Conference on Mining Software Repositories (MSR2015)</a>, MSR Challenge Committee</li>
+			<li><a href="http://fse22.gatech.edu/cfp/research" target=_NEW>The Foundations of Software Engineering (FSE2014)</a>, Artifact Evaluation Committee</li>
+			<li><a href="http://esec-fse.inf.ethz.ch/" target=_NEW>European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2013)</a>, Subreviewer</li> 
+			<li><a href="http://isoft.acm.org/isec2013/" target=_NEW>The 6th India Software Engineering Conference (ISEC 2013)</a>, Subreviewer</li> 
+		</ul> 
+            <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+      
+      <!-- Applicaions -->
+      <section id="applications">
+
+            <h1>Applications</h1>
+            		<ul> 
+			<li><!--<a href="https://market.android.com/details?id=org.lifovebible.android.lifovebible" target=_NEW>-->Lifove Bible<!--</a>--> (Multi-language Bible Viewer for Android), 2010.
+				<br>Introduced and interviewed in one of Korean newpapers: [<a href="http://news.kukinews.com/article/view.asp?page=1&gCode=kmi&arcid=0004128826&cp=nv" target=_NEW>1</a>]
+					[<a href="http://news.kukinews.com/article/view.asp?page=1&gCode=kmi&arcid=0004128027&cp=nv" target=_NEW>2</a>]
+					[<a href="http://news.kukinews.com/article/view.asp?page=1&gCode=kmi&arcid=0004559494&cp=nv" target=_NEW>3</a>]
+				<br>Successor: <a href="https://play.google.com/store/apps/details?id=org.keepbible.android.keepbible" target=_NEW>KeepBible</a>
+					
+			</li> 
+			<li><!--<a href="https://market.android.com/details?id=org.lifovebible.android.lifovehymns" target=_NEW>-->Lifove Hymns<!--</a>--> (Korean Hymns Lyrics Viewer for Android), 2010. (Initial version developer. Now published by Holysoft)</li>
+			<li><a href="http://www.bbbbtc.or.kr/nes/" target=_NEW>NLTC Evaluation System</a> (Education Information System), 2006.</li>
+			<li>Article Archive(Cache) Sever (for PUST), 2006.</li>
+			<li>Army Vehicle Insurance Management System (Confidential), 2004.</li>
+			<li>Operation Map Information System (Web(SVG)-based Map Application for The 2nd Logistics Support Command, Secret), 2003.</li> 
+			<li>EDWGIS (Environmental Data Web GIS System, not available), 2001.</li> 
+			<li>Cyber Image Information System for KICT (Web-based Satellite Image Trading Market, prototype), 2001.</li> 
+			<li>GIS815 Cyber Research Community</a> (Web-based Research Community, not available), 1999.</li> 
+		</ul> 
+            <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+
+      <!-- Others -->
+      <section id="others">
+
+      <h1>Others</h1>
+      <!--<h2>Family</h2>-->
+      	<ul>
+		<li><a href="http://lifove.tistory.com/4" target=_NEW>Korean Blog (Tistory) for graduate students</a></li>
+	</ul>
+      <h2>Visited Countries</h2>
+      	<div id='travel'></div>	
+	<div id='ref'>
+		<a href="http://code.google.com/apis/chart/interactive/docs/gallery/geochart.html" target=_NEW>Google Geo Chart</a>
+	</div>
+
+            <a class="back-to-top" href="#main">Back to Top</a>
+
+      </section>
+
+
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="footer-content">
+        <ul class="footer-menu">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work Experience</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#applications">Applications</a></li>
+               <li><a href="#others">Others</a></li>
+            <!-- <li class="rss-feed"><a href="#">RSS Feed</a></li> -->
+        </ul>
+
+        <p class="footer-text">Copyright 2011 PageOne. &nbsp;&nbsp;&nbsp; Designed by <a href="http://www.styleshout.com/">Styleshout</a> &nbsp;&nbsp;&nbsp; 
+        
+         <script language="JavaScript">
+	<!-- Hide JavaScript...
+	var LastUpdated = document.lastModified;
+	document.writeln ("Last updated on " + LastUpdated  + "GMT.");
+	// End Hiding -->
+	</script>
+        
+        </p>
+       
+    </div>
+
+</footer>
+<iframe width=0  src='/log/writelog.php?from=Research' scrolling=no frameborder=0 height=0></iframe>
+</body>
+</html>
