@@ -3,10 +3,25 @@
 	<title>Online Appendix for Heterogeneous Defect Prediction</title>
 </head>
 <body>
-<h1>Online Appendix for Heterogeneous Defect Prediction</h1>
-<h2>HDP vs. CPDP-RL</h2>
+<h1>Online Appendix for Heterogeneous Defect Prediction (HDP)</h1>
+<section id="mm">
+<h2>Matched metrics in HDP</h2>
+	<h3>Matched Metrics by KSAnalyzer, cutoff=0.05, and Gain Ratio feature selection</h3>
+	<h3>All matched metrics</h3>
+	The follwing files contain matching scores for all combintion of metric matching by theree matching analyzers: KSAnalyzer, PAnalyzer, and SCoAnalyzer. For Kolmogorov-Smirnov test and Spearmans Correlation, we used <a href=http://commons.apache.org/proper/commons-math/>Apache Commons Math3</a> 3.3 version. This raw matching scores can be used for finding the best metric matching by the cutoff of a matching score.
+<br><br>
+Line format: [source]_[target]_[Analyzer]:([# of source metrics including a class]):[source metric index]-[target metric index]|[matching score],...
+<br>
+* Note that attribute index starts from 0.
+<ul>
+	<li>Matching Scores by KSAnalyzer: [<a href=data/matching_scores_KS.txt target=_NEW>Download</a>]</li>
+	<li>Matching Scores by PAnalyzer: [<a href=data/matching_scores_P.txt target=_NEW>Download</a>]</li>
+	<li>Matching Scores by SCoAnalyzer: [<a href=data/matching_scores_SCo.txt target=_NEW>Download</a>]</li>
+</ul>
+</section>
 <section id="cm">
 <h2>Common Metrics among Data Groups</h2>
+  
 <table border=1>
 <tr>
 	<th>Matched Groups</th>
@@ -657,6 +672,8 @@ design_density : DESIGN_DENSITY<br>
 normalized_cyclomatic_complexity : NORMALIZED_CYLOMATIC_COMPLEXITY<br></td>
 </tr>
 </section>
+
+<h2>HDP vs. CPDP-RL</h2>
 
 </table>
 </body>
