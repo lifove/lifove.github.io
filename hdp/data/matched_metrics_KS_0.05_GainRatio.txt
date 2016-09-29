@@ -1,0 +1,1038 @@
+[mc2 : Safe]
+HALSTEAD_DIFFICULTY-CountLineCodeDecl(0.369845)
+NODE_COUNT-CountStmtDecl(0.127992)
+
+[pc1 : Safe]
+NUM_UNIQUE_OPERANDS-CountStmtDecl(0.17748022917613016)
+LOC_EXECUTABLE-CountLineCodeDecl(0.17748022917613016)
+
+[jm1 : Safe]
+LOC_TOTAL-CountLineCodeDecl(0.7946074252084018)
+HALSTEAD_LENGTH-CountLineCode(0.37412001286906316)
+
+[pc3 : Safe]
+LOC_BLANK-SumEssential(0.2616104904460754)
+NUM_UNIQUE_OPERANDS-CountStmtDecl(0.1695730144698735)
+
+[mw1 : Safe]
+NODE_COUNT-CountStmtDecl(0.05125516343931846)
+EDGE_COUNT-CountLineCodeDecl(0.2117813409554593)
+
+[cm1 : Safe]
+LOC_COMMENTS-SumCyclomaticModified(0.12761244977848452)
+PERCENT_COMMENTS-CountLineCodeDecl(0.05178227416090042)
+
+[mc1 : Safe]
+HALSTEAD_VOLUME-CountSemicolon(0.26089128608076373)
+
+[ar5 : Safe]
+halstead_vocabulary-CountSemicolon(0.196715)
+unique_operators-AvgLineCode(0.2649)
+halstead_difficulty-AvgLine(0.606437)
+
+[ar3 : Safe]
+comment_loc-SumCyclomaticStrict(0.058443)
+halstead_error-RatioCommentToCode(0.248906)
+cyclomatic_complexity-SumCyclomaticModified(0.149377)
+
+[ar4 : Safe]
+halstead_length-CountLine(0.489948)
+total_operators-CountLineCode(0.055316)
+total_operands-CountSemicolon(0.187891)
+
+[ar6 : Safe]
+halstead_vocabulary-CountStmtDecl(0.111775)
+
+[ant-1.3 : Safe]
+rfc-CountLineCodeDecl(0.289099)
+lcom-SumCyclomaticModified(0.257637)
+
+[arc : Safe]
+rfc-AvgLine(0.15435694393055743)
+loc-CountStmt(0.7185492283399122)
+
+[poi-1.5 : Safe]
+wmc-AvgLineCode(0.39117814262324924)
+loc-CountLine(0.052553085871329674)
+
+[skarbonka : Safe]
+rfc-CountLineBlank(0.705222)
+
+[tomcat : Safe]
+rfc-CountStmtDecl(0.8825156882911734)
+loc-CountLine(0.3865548624503393)
+
+[xalan-2.4 : Safe]
+loc-CountLine(0.34128773427064063)
+
+[EQ : Safe]
+ck_oo_numberOfMethods-SumEssential(0.07986505866384508)
+ck_oo_lcom-SumCyclomaticStrict(0.11960541583086293)
+
+[JDT : Safe]
+ck_oo_rfc-CountLineCodeDecl(0.2857746183644724)
+ck_oo_numberOfLinesOfCode-CountLineCode(0.3328241403666439)
+numberOfBugsFoundUntil:-SumEssential(0.28330650794442314)
+
+[mc2 : Apache]
+GLOBAL_DATA_COMPLEXITY-AvgCyclomaticModified(0.15347495917907816)
+HALSTEAD_DIFFICULTY-AvgLineCode(0.21529255708877537)
+
+[jm1 : Apache]
+HALSTEAD_VOLUME-CountLineCode(0.36328943846200246)
+HALSTEAD_LENGTH-CountLineCodeDecl(0.23783546062161265)
+
+[mw1 : Apache]
+NUMBER_OF_LINES-AvgLine(0.06565975658393275)
+
+[ar5 : Apache]
+halstead_vocabulary-AvgLine(0.473052)
+unique_operators-MaxCyclomaticModified(0.0645)
+halstead_difficulty-MaxCyclomatic(0.516492)
+
+[ar3 : Apache]
+halstead_volume-CountLine(0.5857999635821534)
+
+[ar4 : Apache]
+total_operators-CountLineCodeDecl(0.2613671129871533)
+total_operands-CountStmtDecl(0.19541264895805277)
+
+[ant-1.3 : Apache]
+rfc-AvgLine(0.08988354785741726)
+loc-CountStmt(0.11101344891574971)
+
+[arc : Apache]
+rfc-MaxCyclomaticModified(0.47387351058843463)
+loc-SumCyclomaticStrict(0.28586206505486866)
+
+[skarbonka : Apache]
+rfc-MaxCyclomaticStrict(0.372547)
+
+[tomcat : Apache]
+loc-CountSemicolon(0.22600266347672116)
+
+[xalan-2.4 : Apache]
+loc-CountStmt(0.4324542176567957)
+
+[JDT : Apache]
+ck_oo_rfc-SumCyclomaticModified(0.0506249551576794)
+
+[ar5 : Zxing]
+halstead_vocabulary-CountLineCode(0.34634884217958983)
+unique_operators-CountStmtDecl(0.17084379378200387)
+halstead_difficulty-CountLineCodeDecl(0.7968191251769057)
+
+[ar4 : Zxing]
+total_operators-CountLine(0.11114642440892886)
+total_operands-CountLineCode(0.472764207930911)
+
+[arc : Zxing]
+rfc-CountStmtExe(0.20268156942260152)
+
+[skarbonka : Zxing]
+rfc-CountSemicolon(0.14854825255407167)
+
+[tomcat : Zxing]
+rfc-CountSemicolon(0.24903542061451145)
+
+[Safe : mc2]
+CountStmt-NUM_OPERANDS(0.410601)
+
+[Apache : mc2]
+CountLine-HALSTEAD_VOLUME(0.22745832737803728)
+SumCyclomaticModified-NUM_OPERANDS(0.07711478614454337)
+
+[Zxing : mc2]
+CountLineCode-NUMBER_OF_LINES(0.37831491521189564)
+
+[pc1 : mc2]
+HALSTEAD_CONTENT-HALSTEAD_CONTENT(0.8134314204966228)
+NUM_UNIQUE_OPERANDS-NUM_UNIQUE_OPERANDS(0.3856428968169402)
+LOC_TOTAL-HALSTEAD_DIFFICULTY(0.49017023132074555)
+LOC_EXECUTABLE-EDGE_COUNT(0.19566191723234172)
+
+[jm1 : mc2]
+LOC_TOTAL-LOC_EXECUTABLE(0.17712355227827248)
+HALSTEAD_LENGTH-NUM_OPERATORS(0.35992246709760767)
+
+[pc3 : mc2]
+HALSTEAD_CONTENT-HALSTEAD_CONTENT(0.9011312882499899)
+NUM_UNIQUE_OPERANDS-NUM_UNIQUE_OPERANDS(0.32573119212907253)
+
+[mw1 : mc2]
+NODE_COUNT-NODE_COUNT(0.16368756026222941)
+EDGE_COUNT-HALSTEAD_DIFFICULTY(0.3328256903794491)
+NUMBER_OF_LINES-HALSTEAD_CONTENT(0.4988684389874859)
+LOC_BLANK-MODIFIED_CONDITION_COUNT(0.16859150287831082)
+
+[cm1 : mc2]
+LOC_TOTAL-HALSTEAD_CONTENT(0.6528629148964314)
+HALSTEAD_CONTENT-NUMBER_OF_LINES(0.06770690177185812)
+
+[ar5 : mc2]
+halstead_vocabulary-NUMBER_OF_LINES(0.439429)
+unique_operators-BRANCH_COUNT(0.147216)
+halstead_difficulty-CONDITION_COUNT(0.368092)
+
+[ar3 : mc2]
+halstead_volume-HALSTEAD_VOLUME(0.5884)
+halstead_error-HALSTEAD_ERROR_EST(0.673788)
+
+[ar4 : mc2]
+halstead_length-HALSTEAD_LENGTH(0.18733617404102054)
+total_operators-NUM_OPERANDS(0.2298493777625058)
+total_operands-NUMBER_OF_LINES(0.7637921048879048)
+
+[ar6 : mc2]
+halstead_vocabulary-HALSTEAD_DIFFICULTY(0.20584046022882074)
+
+[ant-1.3 : mc2]
+rfc-HALSTEAD_CONTENT(0.4986254411934544)
+
+[skarbonka : mc2]
+rfc-NUM_UNIQUE_OPERANDS(0.082456)
+
+[tomcat : mc2]
+rfc-NUM_UNIQUE_OPERANDS(0.15326859627224187)
+
+[xalan-2.4 : mc2]
+loc-HALSTEAD_LENGTH(0.1633538428210578)
+
+[JDT : mc2]
+ck_oo_rfc-LOC_TOTAL(0.15077077758813373)
+ck_oo_numberOfLinesOfCode-NUM_OPERATORS(0.1407747206083133)
+
+[ML : mc2]
+numberOfBugsFoundUntil:-MODIFIED_CONDITION_COUNT(0.06387739123193403)
+
+[ar5 : pc5]
+halstead_difficulty-HALSTEAD_VOLUME(0.12663131165330477)
+
+[Apache : pc1]
+CountLine-HALSTEAD_VOLUME(0.7227444475651266)
+
+[mc2 : pc1]
+HALSTEAD_DIFFICULTY-LOC_TOTAL(0.49017023132074555)
+NODE_COUNT-NUM_UNIQUE_OPERANDS(0.2671616667230545)
+
+[ar5 : pc1]
+halstead_vocabulary-NUM_OPERANDS(0.46781177344801206)
+unique_operators-BRANCH_COUNT(0.05285084016767039)
+halstead_difficulty-CONDITION_COUNT(0.2953646909316583)
+
+[ar3 : pc1]
+halstead_volume-HALSTEAD_VOLUME(0.4868870228177469)
+halstead_error-HALSTEAD_ERROR_EST(0.44118146323991037)
+
+[ar4 : pc1]
+halstead_length-HALSTEAD_LENGTH(0.23227143936976313)
+total_operators-NUM_OPERATORS(0.13859153262219404)
+total_operands-NUM_OPERANDS(0.789628955386015)
+
+[ar6 : pc1]
+halstead_vocabulary-LOC_EXECUTABLE(0.41742653481688163)
+
+[ant-1.3 : pc1]
+rfc-NUMBER_OF_LINES(0.15623286880130205)
+
+[Safe : pc2]
+CountStmt-HALSTEAD_PROG_TIME(0.2731901497561412)
+
+[mc2 : pc2]
+NODE_COUNT-NUM_OPERATORS(0.12453540896284088)
+
+[ar5 : pc2]
+unique_operators-NUMBER_OF_LINES(0.33748351109415686)
+halstead_difficulty-NUM_OPERANDS(0.9324441248803896)
+
+[ar6 : pc2]
+halstead_vocabulary-NUM_OPERATORS(0.07717428872205334)
+
+[ant-1.3 : pc2]
+rfc-HALSTEAD_LENGTH(0.06941592007069697)
+
+[Safe : jm1]
+CountStmt-HALSTEAD_LENGTH(0.13696031827287314)
+
+[Apache : jm1]
+CountLineCode-HALSTEAD_VOLUME(0.36328943846200246)
+
+[mc2 : jm1]
+HALSTEAD_DIFFICULTY-LOC_TOTAL(0.12637999203196726)
+
+[ar5 : jm1]
+halstead_vocabulary-NUM_OPERATORS(0.22158567060172774)
+unique_operators-NUM_UNIQUE_OPERATORS(0.6419654791001436)
+halstead_difficulty-NUM_UNIQUE_OPERANDS(0.8583163024177838)
+halstead_level-HALSTEAD_LEVEL(0.7201111226662229)
+
+[ar4 : jm1]
+total_operators-HALSTEAD_LENGTH(0.2038852494865182)
+total_operands-NUM_OPERATORS(0.2259930109542967)
+unique_operators-NUM_UNIQUE_OPERATORS(0.13226989214752272)
+
+[skarbonka : jm1]
+rfc-NUM_OPERANDS(0.1770515763359548)
+
+[Safe : pc4]
+CountStmt-HALSTEAD_LENGTH(0.06129246426335111)
+
+[Apache : pc4]
+CountLineCode-HALSTEAD_VOLUME(0.058387290494820054)
+
+[Zxing : pc4]
+CountLineCode-NUM_OPERATORS(0.20598485131403643)
+
+[mc2 : pc4]
+HALSTEAD_DIFFICULTY-HALSTEAD_CONTENT(0.05788627534969215)
+
+[ar5 : pc4]
+halstead_vocabulary-NUM_OPERATORS(0.5076953952362248)
+unique_operators-NUM_UNIQUE_OPERANDS(0.4270730943349972)
+halstead_difficulty-LOC_EXECUTABLE(0.9927849218402266)
+halstead_level-HALSTEAD_LEVEL(0.8848439609514889)
+
+[ar4 : pc4]
+total_operators-HALSTEAD_LENGTH(0.4588058484140074)
+total_operands-NUM_OPERATORS(0.4625303125195176)
+unique_operators-NUM_UNIQUE_OPERATORS(0.28186201947020373)
+
+[ant-1.3 : pc4]
+rfc-NUMBER_OF_LINES(0.09554260484017607)
+
+[skarbonka : pc4]
+rfc-NUM_OPERANDS(0.13203811189480774)
+
+[Safe : kc3]
+CountStmt-NUM_OPERANDS(0.12279204948882383)
+
+[pc1 : kc3]
+LOC_TOTAL-LOC_TOTAL(0.6770595108143856)
+LOC_EXECUTABLE-LOC_EXECUTABLE(0.43448142501449705)
+
+[mw1 : kc3]
+EDGE_COUNT-LOC_EXECUTABLE(0.35979482059789747)
+
+[cm1 : kc3]
+LOC_EXECUTABLE-EDGE_COUNT(0.38778460918898017)
+LOC_TOTAL-NUMBER_OF_LINES(0.13562067801575084)
+HALSTEAD_CONTENT-HALSTEAD_CONTENT(0.0838686674078516)
+
+[ar5 : kc3]
+halstead_vocabulary-HALSTEAD_CONTENT(0.681702)
+halstead_difficulty-CONDITION_COUNT(0.152401)
+
+[ar3 : kc3]
+halstead_volume-HALSTEAD_PROG_TIME(0.8834483178189392)
+
+[ar4 : kc3]
+halstead_length-HALSTEAD_LENGTH(0.19722106451194366)
+total_operators-NUM_OPERATORS(0.11453653112838424)
+total_operands-NUM_OPERANDS(0.2513210919807991)
+
+[ar1 : kc3]
+halstead_level-HALSTEAD_ERROR_EST(0.08738473259200252)
+
+[ar6 : kc3]
+halstead_vocabulary-NUM_UNIQUE_OPERANDS(0.327244477637298)
+
+[ant-1.3 : kc3]
+rfc-NUMBER_OF_LINES(0.3418713110879962)
+
+[camel-1.0 : kc3]
+cbo-CALL_PAIRS(0.09092349264059651)
+
+[Apache : pc3]
+CountLine-HALSTEAD_VOLUME(0.25458619285209116)
+
+[mc2 : pc3]
+HALSTEAD_DIFFICULTY-LOC_TOTAL(0.2708489352814407)
+NODE_COUNT-EDGE_COUNT(0.2516076351275488)
+
+[ar5 : pc3]
+halstead_vocabulary-NUM_OPERANDS(0.4725649375563743)
+unique_operators-CONDITION_COUNT(0.3271797793128184)
+halstead_difficulty-HALSTEAD_DIFFICULTY(0.08412011998593516)
+halstead_level-HALSTEAD_LEVEL(0.11174637599260984)
+
+[ar3 : pc3]
+halstead_volume-HALSTEAD_VOLUME(0.34661156385867853)
+halstead_error-HALSTEAD_ERROR_EST(0.3257794792689842)
+
+[ar4 : pc3]
+total_operands-NUM_OPERANDS(0.4809475105765534)
+
+[ar6 : pc3]
+halstead_vocabulary-LOC_TOTAL(0.3583237808551466)
+
+[ant-1.3 : pc3]
+rfc-NUMBER_OF_LINES(0.24152010727315665)
+
+[Apache : mw1]
+CountLine-HALSTEAD_VOLUME(0.08823380586330754)
+CountLineCode-HALSTEAD_PROG_TIME(0.49421432575864344)
+
+[mc2 : mw1]
+GLOBAL_DATA_COMPLEXITY-CALL_PAIRS(0.1012474863125794)
+HALSTEAD_DIFFICULTY-NUM_UNIQUE_OPERANDS(0.5470920450581721)
+NODE_COUNT-NODE_COUNT(0.16368756026222941)
+
+[ar5 : mw1]
+halstead_vocabulary-HALSTEAD_CONTENT(0.702927)
+unique_operators-HALSTEAD_DIFFICULTY(0.57671)
+halstead_difficulty-PERCENT_COMMENTS(0.147592)
+halstead_level-HALSTEAD_ERROR_EST(0.189726)
+
+[ar3 : mw1]
+halstead_volume-HALSTEAD_VOLUME(0.13861013458052907)
+halstead_error-HALSTEAD_ERROR_EST(0.12517925802819307)
+
+[ar4 : mw1]
+total_operators-HALSTEAD_LENGTH(0.09848937225482834)
+total_operands-NUM_OPERATORS(0.38744501588180147)
+unique_operators-HALSTEAD_DIFFICULTY(0.05604491432518033)
+
+[ar6 : mw1]
+halstead_vocabulary-EDGE_COUNT(0.5125483074099897)
+
+[ant-1.3 : mw1]
+rfc-NUMBER_OF_LINES(0.10686613345913565)
+
+[Safe : cm1]
+CountStmt-NUM_OPERANDS(0.11600085658284043)
+
+[Apache : cm1]
+CountLine-HALSTEAD_VOLUME(0.10734289765967575)
+
+[mc2 : cm1]
+HALSTEAD_DIFFICULTY-NUM_UNIQUE_OPERANDS(0.3669674979498687)
+NODE_COUNT-EDGE_COUNT(0.6290766689011412)
+
+[ar5 : cm1]
+halstead_vocabulary-HALSTEAD_CONTENT(0.9856234926663592)
+unique_operators-CONDITION_COUNT(0.1565762321837616)
+halstead_difficulty-LOC_BLANK(0.18886150916691635)
+
+[ar3 : cm1]
+halstead_volume-HALSTEAD_VOLUME(0.5969160490121326)
+halstead_error-HALSTEAD_ERROR_EST(0.44881990733638444)
+
+[ar4 : cm1]
+halstead_length-HALSTEAD_LENGTH(0.3671464749808303)
+total_operators-NUM_OPERATORS(0.3405057742143539)
+total_operands-NUM_OPERANDS(0.7026599590322891)
+
+[ar1 : cm1]
+halstead_level-HALSTEAD_ERROR_EST(0.07352143198514727)
+
+[ar6 : cm1]
+halstead_vocabulary-NUM_UNIQUE_OPERANDS(0.061426486732805485)
+
+[ant-1.3 : cm1]
+rfc-LOC_TOTAL(0.1617808549839207)
+
+[skarbonka : cm1]
+rfc-PERCENT_COMMENTS(0.12455522326883428)
+
+[ar5 : mc1]
+halstead_difficulty-HALSTEAD_CONTENT(0.06666949847287684)
+
+[Safe : ar5]
+CountLineCodeExe-executable_loc(0.101741)
+CountStmtExe-branch_count(0.138276)
+CountStmt-total_loc(0.621268)
+
+[Apache : ar5]
+CountLine-halstead_volume(0.767038)
+SumCyclomaticModified-executable_loc(0.207752)
+
+[Zxing : ar5]
+CountLineBlank-cyclomatic_complexity(0.1967742899950996)
+CountLineCodeDecl-halstead_difficulty(0.7968191251769057)
+CountLineCode-total_loc(0.675553993400304)
+
+[mc2 : ar5]
+HALSTEAD_DIFFICULTY-unique_operands(0.259609)
+HALSTEAD_EFFORT-halstead_effort(0.068814)
+HALSTEAD_PROG_TIME-halstead_time(0.068777)
+NODE_COUNT-halstead_difficulty(0.104643)
+
+[pc1 : ar5]
+HALSTEAD_CONTENT-halstead_vocabulary(0.15529406088284314)
+NUM_UNIQUE_OPERANDS-halstead_difficulty(0.06824227459203158)
+LOC_TOTAL-unique_operands(0.2608570014306104)
+LOC_EXECUTABLE-executable_loc(0.06916074246163018)
+
+[pc2 : ar5]
+HALSTEAD_CONTENT-halstead_difficulty(0.050578118454626786)
+
+[jm1 : ar5]
+LOC_TOTAL-unique_operands(0.43951770058100226)
+HALSTEAD_VOLUME-halstead_volume(0.11393229348370482)
+HALSTEAD_LENGTH-total_operands(0.8988453670115837)
+
+[kc3 : ar5]
+LOC_BLANK-call_pairs(0.081653)
+
+[pc3 : ar5]
+LOC_BLANK-cyclomatic_complexity(0.06422873719825017)
+HALSTEAD_CONTENT-unique_operands(0.2670645201037326)
+NUM_UNIQUE_OPERANDS-halstead_difficulty(0.07561499488636503)
+
+[mw1 : ar5]
+EDGE_COUNT-unique_operands(0.238374)
+NUMBER_OF_LINES-halstead_vocabulary(0.326393)
+
+[cm1 : ar5]
+LOC_EXECUTABLE-executable_loc(0.2909762386104753)
+LOC_TOTAL-total_loc(0.05283946138741635)
+LOC_COMMENTS-cyclomatic_complexity(0.058896703433716224)
+HALSTEAD_CONTENT-halstead_vocabulary(0.9856234926663592)
+PERCENT_COMMENTS-unique_operands(0.27663652204372224)
+
+[mc1 : ar5]
+HALSTEAD_VOLUME-executable_loc(0.14258533579122956)
+
+[ant-1.3 : ar5]
+rfc-unique_operands(0.906909)
+loc-halstead_length(0.242811)
+lcom-cyclomatic_complexity(0.065207)
+
+[arc : ar5]
+ce-call_pairs(0.478047)
+rfc-blank_loc(0.780751)
+loc-total_loc(0.089413)
+
+[camel-1.0 : ar5]
+ca-design_complexity(0.09576430181037554)
+cbo-cyclomatic_complexity(0.06517758573152588)
+
+[poi-1.5 : ar5]
+wmc-unique_operators(0.61261)
+loc-halstead_length(0.172204)
+
+[skarbonka : ar5]
+rfc-executable_loc(0.149174)
+
+[tomcat : ar5]
+rfc-blank_loc(0.18440479341701566)
+loc-halstead_length(0.10505594861277845)
+
+[xalan-2.4 : ar5]
+loc-halstead_length(0.39497724668872813)
+max_cc-design_complexity(0.1458759883261005)
+
+[EQ : ar5]
+ck_oo_numberOfAttributes-design_complexity(0.08151888641220972)
+ck_oo_numberOfMethods-cyclomatic_complexity(0.35122646647791445)
+
+[LC : ar5]
+CvsEntropy-design_complexity(0.0647045414619486)
+
+[JDT : ar5]
+ck_oo_rfc-executable_loc(0.8499365574537707)
+ck_oo_numberOfLinesOfCode-total_operators(0.8040816506547632)
+numberOfBugsFoundUntil:-cyclomatic_complexity(0.06516765837698668)
+
+[Safe : ar3]
+CountLineCodeExe-branch_count(0.058188)
+CountStmtExe-executable_loc(0.065314)
+CountStmt-total_loc(0.63764)
+
+[Apache : ar3]
+CountLine-halstead_volume(0.5857999635821534)
+SumCyclomaticModified-total_loc(0.1472444803600388)
+
+[Zxing : ar3]
+CountLineCodeDecl-halstead_difficulty(0.3681233879374247)
+CountLineCode-executable_loc(0.3681233879374247)
+
+[mc2 : ar3]
+HALSTEAD_DIFFICULTY-unique_operands(0.060865)
+HALSTEAD_EFFORT-halstead_effort(0.091706)
+HALSTEAD_PROG_TIME-halstead_time(0.092022)
+
+[pc1 : ar3]
+HALSTEAD_CONTENT-executable_loc(0.07275372004878944)
+LOC_TOTAL-unique_operands(0.0784926181973824)
+
+[jm1 : ar3]
+LOC_TOTAL-unique_operands(0.1824332111463065)
+HALSTEAD_LENGTH-total_operands(0.8109679508787024)
+
+[pc3 : ar3]
+HALSTEAD_CONTENT-unique_operands(0.3081183118913916)
+
+[mw1 : ar3]
+NUMBER_OF_LINES-unique_operands(0.21577617613263855)
+
+[cm1 : ar3]
+LOC_EXECUTABLE-unique_operands(0.8137835998761029)
+LOC_TOTAL-executable_loc(0.11461257947811898)
+HALSTEAD_CONTENT-halstead_vocabulary(0.5485019357284528)
+
+[mc1 : ar3]
+HALSTEAD_VOLUME-executable_loc(0.05830838021670992)
+
+[ant-1.3 : ar3]
+rfc-unique_operands(0.923851)
+loc-halstead_length(0.409822)
+
+[arc : ar3]
+ce-design_complexity(0.09096985932678336)
+rfc-blank_loc(0.3941911802732392)
+loc-total_loc(0.07991075418934523)
+
+[poi-1.5 : ar3]
+wmc-unique_operators(0.18908274721603646)
+loc-halstead_length(0.34919123279430686)
+
+[skarbonka : ar3]
+rfc-blank_loc(0.120843)
+
+[xalan-2.4 : ar3]
+loc-halstead_length(0.1640407000999502)
+
+[EQ : ar3]
+ck_oo_numberOfMethods-cyclomatic_complexity(0.20837063079068452)
+
+[JDT : ar3]
+ck_oo_rfc-executable_loc(0.8993746142076892)
+ck_oo_numberOfLinesOfCode-total_operators(0.8935010724851064)
+
+[Safe : ar4]
+CountStmt-total_loc(0.193733)
+
+[Apache : ar4]
+CountLineCode-halstead_time(0.6950250894796238)
+SumCyclomaticModified-total_operands(0.0760408547824637)
+
+[Zxing : ar4]
+CountLineCodeDecl-halstead_difficulty(0.08459543748841358)
+CountLineCode-total_operands(0.472764207930911)
+
+[mc2 : ar4]
+GLOBAL_DATA_COMPLEXITY-cyclomatic_complexity(0.06312549267667489)
+HALSTEAD_DIFFICULTY-unique_operands(0.9385807996166601)
+NODE_COUNT-blank_loc(0.1942748027505019)
+
+[pc1 : ar4]
+HALSTEAD_CONTENT-halstead_vocabulary(0.06672044231479368)
+LOC_TOTAL-unique_operands(0.41053419870361874)
+
+[jm1 : ar4]
+LOC_TOTAL-blank_loc(0.09936788772255456)
+HALSTEAD_VOLUME-halstead_time(0.19968071624356043)
+HALSTEAD_LENGTH-total_loc(0.2756348628060049)
+
+[pc3 : ar4]
+NUM_UNIQUE_OPERANDS-unique_operands(0.1010872233875082)
+
+[mw1 : ar4]
+EDGE_COUNT-unique_operands(0.5068652154115574)
+NUMBER_OF_LINES-halstead_vocabulary(0.19836489233363963)
+LOC_BLANK-cyclomatic_complexity(0.2602897220920032)
+
+[cm1 : ar4]
+LOC_EXECUTABLE-executable_loc(0.21774675879683592)
+LOC_COMMENTS-branch_count(0.10914425820231188)
+HALSTEAD_CONTENT-total_operands(0.16940983183067126)
+
+[ant-1.3 : ar4]
+rfc-executable_loc(0.9393016718218886)
+loc-halstead_time(0.07632301205917302)
+lcom-branch_count(0.07788640191293983)
+
+[arc : ar4]
+rfc-halstead_difficulty(0.09397030075665647)
+
+[poi-1.5 : ar4]
+wmc-halstead_difficulty(0.11394995386828821)
+
+[skarbonka : ar4]
+rfc-blank_loc(0.181419)
+
+[tomcat : ar4]
+rfc-blank_loc(0.08714412533752802)
+
+[EQ : ar4]
+ck_oo_numberOfMethods-cyclomatic_complexity(0.2082485966276959)
+
+[JDT : ar4]
+numberOfBugsFoundUntil:-decision_count(0.05044138190933023)
+
+[ML : ar4]
+numberOfBugsFoundUntil:-cyclomatic_complexity(0.13598163118983153)
+
+[Safe : ar1]
+CountLineCodeExe-halstead_time(0.220716)
+CountStmt-halstead_length(0.15252)
+
+[Apache : ar1]
+SumCyclomaticModified-halstead_time(0.10875023490062019)
+
+[Zxing : ar1]
+CountLineBlank-halstead_difficulty(0.14327597328570696)
+CountLineCodeDecl-total_loc(0.15408283475598938)
+CountLineCode-halstead_length(0.23145139049323193)
+
+[mc2 : ar1]
+HALSTEAD_PROG_TIME-halstead_effort(0.5775943058819777)
+NODE_COUNT-halstead_vocabulary(0.43876657907331296)
+
+[pc1 : ar1]
+NUM_UNIQUE_OPERANDS-halstead_vocabulary(0.13177577798378293)
+
+[pc3 : ar1]
+NUM_UNIQUE_OPERANDS-halstead_vocabulary(0.3630471690022242)
+
+[mw1 : ar1]
+EDGE_COUNT-halstead_vocabulary(0.4417589049702235)
+
+[ant-1.3 : ar1]
+rfc-total_operators(0.14238758981744903)
+
+[arc : ar1]
+rfc-total_loc(0.2196034833806586)
+loc-halstead_time(0.27183176337646464)
+
+[poi-1.5 : ar1]
+wmc-unique_operands(0.06846347541304887)
+
+[skarbonka : ar1]
+rfc-total_operands(0.257798)
+
+[tomcat : ar1]
+rfc-total_operands(0.11155013603610742)
+loc-halstead_volume(0.16623577627074537)
+
+[xalan-2.4 : ar1]
+loc-halstead_volume(0.2960250932907458)
+
+[JDT : ar1]
+ck_oo_rfc-halstead_length(0.08546671815401885)
+
+[Safe : ar6]
+CountLineCodeExe-halstead_time(0.192136)
+CountStmt-halstead_length(0.190025)
+
+[Apache : ar6]
+SumCyclomaticModified-halstead_time(0.16135188922157828)
+
+[Zxing : ar6]
+CountLineBlank-halstead_difficulty(0.2084009664190326)
+CountLineCodeDecl-total_operands(0.10702447393092607)
+CountLineCode-halstead_length(0.05754448113628774)
+
+[mc2 : ar6]
+HALSTEAD_DIFFICULTY-halstead_vocabulary(0.20584046022882074)
+HALSTEAD_PROG_TIME-halstead_effort(0.43959602178230295)
+NODE_COUNT-total_loc(0.14763869282798647)
+
+[pc1 : ar6]
+LOC_EXECUTABLE-halstead_vocabulary(0.41742653481688163)
+
+[jm1 : ar6]
+LOC_TOTAL-total_operators(0.1693677611668447)
+
+[pc3 : ar6]
+NUM_UNIQUE_OPERANDS-halstead_vocabulary(0.09936881429876232)
+
+[mw1 : ar6]
+EDGE_COUNT-halstead_vocabulary(0.5125483074099897)
+
+[cm1 : ar6]
+HALSTEAD_CONTENT-halstead_length(0.0745195319148767)
+
+[ant-1.3 : ar6]
+rfc-total_operators(0.41453361869031957)
+
+[arc : ar6]
+rfc-executable_loc(0.07024985982978549)
+loc-halstead_time(0.4433082896893282)
+
+[poi-1.5 : ar6]
+wmc-unique_operands(0.4588022857060866)
+loc-halstead_volume(0.060035593310151514)
+
+[skarbonka : ar6]
+rfc-total_operands(0.122318)
+
+[tomcat : ar6]
+rfc-total_operands(0.47718739620825457)
+
+[xalan-2.4 : ar6]
+loc-halstead_volume(0.1242254031004848)
+
+[JDT : ar6]
+ck_oo_rfc-total_operators(0.15140029676133293)
+
+[Zxing : ant-1.3]
+CountLineBlank-npm(0.060442715673908576)
+
+[mc2 : ant-1.3]
+HALSTEAD_DIFFICULTY-amc(0.5515623711203055)
+
+[pc1 : ant-1.3]
+HALSTEAD_CONTENT-rfc(0.1105338672277636)
+LOC_TOTAL-amc(0.07227358382122417)
+
+[pc2 : ant-1.3]
+CYCLOMATIC_DENSITY-cam(0.05377156989134879)
+
+[jm1 : ant-1.3]
+LOC_TOTAL-amc(0.19130292133751348)
+
+[kc3 : ant-1.3]
+CALL_PAIRS-wmc(0.3761879507563286)
+
+[pc3 : ant-1.3]
+HALSTEAD_CONTENT-rfc(0.06771201562313311)
+
+[mw1 : ant-1.3]
+NUMBER_OF_LINES-rfc(0.10686613345913565)
+LOC_BLANK-ce(0.14662814705541694)
+
+[cm1 : ant-1.3]
+LOC_EXECUTABLE-amc(0.19593000132639082)
+LOC_TOTAL-rfc(0.1617808549839207)
+
+[ar5 : ant-1.3]
+halstead_vocabulary-rfc(0.117461)
+halstead_difficulty-wmc(0.086172)
+
+[ar6 : ant-1.3]
+halstead_vocabulary-amc(0.09525022313756815)
+
+[Safe : arc]
+CountStmt-loc(0.7185492283399122)
+
+[Zxing : arc]
+CountLineBlank-wmc(0.06841549396537205)
+CountLineCodeDecl-rfc(0.11184649384532819)
+
+[ar5 : arc]
+halstead_difficulty-rfc(0.644453)
+
+[Safe : camel-1.0]
+CountStmt-loc(0.2192955192400744)
+
+[Zxing : camel-1.0]
+CountLineCodeDecl-rfc(0.2822246454302617)
+
+[mc2 : camel-1.0]
+GLOBAL_DATA_COMPLEXITY-npm(0.07752677179681056)
+
+[kc3 : camel-1.0]
+CALL_PAIRS-cbo(0.09092349264059651)
+
+[ar5 : camel-1.0]
+unique_operators-amc(0.08036793959986432)
+halstead_difficulty-rfc(0.8289068770894916)
+
+[ar4 : camel-1.0]
+total_operators-loc(0.1679227981229131)
+
+[ar1 : camel-1.0]
+unique_operators-amc(0.08906334484573053)
+
+[Safe : poi-1.5]
+CountStmtExe-lcom(0.2732632793760682)
+
+[mc2 : poi-1.5]
+HALSTEAD_DIFFICULTY-rfc(0.25508573138900925)
+
+[ar5 : poi-1.5]
+unique_operators-wmc(0.611885)
+halstead_difficulty-amc(0.424625)
+
+[ar4 : poi-1.5]
+unique_operators-amc(0.08137745749929182)
+
+[mc2 : redaktor]
+HALSTEAD_DIFFICULTY-rfc(0.09757687855333441)
+
+[mw1 : redaktor]
+LOC_BLANK-ce(0.08145716559209559)
+
+[ar5 : redaktor]
+unique_operators-wmc(0.146463)
+halstead_difficulty-cbo(0.053904)
+
+[ar4 : redaktor]
+unique_operators-cbo(0.12628030295509707)
+
+[Safe : skarbonka]
+CountLineCodeExe-amc(0.246091)
+
+[Apache : skarbonka]
+SumCyclomaticModified-amc(0.057043)
+
+[Zxing : skarbonka]
+CountLineBlank-wmc(0.2973158568028176)
+
+[mc2 : skarbonka]
+GLOBAL_DATA_COMPLEXITY-npm(0.607969)
+HALSTEAD_DIFFICULTY-rfc(0.065155)
+
+[pc2 : skarbonka]
+CYCLOMATIC_DENSITY-cam(0.07272229740091263)
+NUM_UNIQUE_OPERANDS-cbo(0.05889054468591848)
+
+[kc3 : skarbonka]
+CYCLOMATIC_COMPLEXITY-cbo(0.067977)
+
+[pc3 : skarbonka]
+LOC_BLANK-npm(0.0980423956539791)
+
+[mw1 : skarbonka]
+LOC_BLANK-wmc(0.29184857321168156)
+DESIGN_COMPLEXITY-npm(0.06878888737049427)
+
+[cm1 : skarbonka]
+LOC_COMMENTS-lcom(0.3070361158035497)
+PERCENT_COMMENTS-rfc(0.12455522326883428)
+
+[ar5 : skarbonka]
+halstead_difficulty-rfc(0.067902)
+
+[ar3 : skarbonka]
+comment_loc-lcom(0.098471)
+cyclomatic_complexity-wmc(0.098337)
+
+[EQ : skarbonka]
+ck_oo_numberOfMethods-wmc(0.7769501503640028)
+ck_oo_lcom-lcom(0.45397128382502494)
+
+[LC : skarbonka]
+CvsEntropy-npm(0.06336169842968975)
+
+[JDT : skarbonka]
+ck_oo_rfc-rfc(0.07536971525074587)
+numberOfBugsFoundUntil:-npm(0.1853865301927743)
+
+[ML : skarbonka]
+numberOfBugsFoundUntil:-npm(0.6173914431200838)
+
+[ar5 : tomcat]
+halstead_difficulty-amc(0.4287185309254148)
+
+[Safe : velocity-1.4]
+CountStmt-loc(0.06355405326430852)
+
+[mc2 : velocity-1.4]
+HALSTEAD_DIFFICULTY-rfc(0.08562724365890295)
+
+[kc3 : velocity-1.4]
+CALL_PAIRS-cbo(0.10275080439341755)
+
+[ar5 : velocity-1.4]
+halstead_difficulty-amc(0.235095)
+
+[ar4 : velocity-1.4]
+halstead_length-loc(0.09657426415192827)
+
+[JDT : velocity-1.4]
+ck_oo_numberOfLinesOfCode-loc(0.19131019099348945)
+
+[ar5 : xalan-2.4]
+unique_operators-cbo(0.11738721180086764)
+halstead_difficulty-amc(0.24726620459296222)
+
+[Safe : xerces-1.2]
+CountLineCodeExe-lcom(0.0626838975226015)
+CountStmt-loc(0.19957027409206263)
+
+[ar5 : xerces-1.2]
+halstead_difficulty-rfc(0.6808174613164765)
+
+[Safe : PDE]
+CountStmtExe-ck_oo_lcom(0.1665927889925265)
+CountStmt-ck_oo_numberOfLinesOfCode(0.1360947577557371)
+
+[ar5 : PDE]
+halstead_difficulty-ck_oo_wmc(0.7962737289438111)
+
+[ar4 : PDE]
+total_operators-ck_oo_numberOfLinesOfCode(0.21397502752877162)
+
+[ant-1.3 : PDE]
+rfc-ck_oo_rfc(0.052360827250891195)
+
+[skarbonka : PDE]
+rfc-ck_oo_lcom(0.06804352980693429)
+
+[Safe : EQ]
+CountLineCodeExe-ck_oo_rfc(0.139896944703078)
+CountStmtExe-ck_oo_lcom(0.09165058875575849)
+CountStmt-ck_oo_numberOfLinesOfCode(0.3157052498302416)
+
+[Apache : EQ]
+SumCyclomaticModified-ck_oo_numberOfLinesOfCode(0.06697771143246822)
+
+[ar3 : EQ]
+cyclomatic_complexity-ck_oo_cbo(0.20837063079068452)
+
+[skarbonka : EQ]
+rfc-ck_oo_rfc(0.27300971846578814)
+
+[Safe : LC]
+CountStmt-ck_oo_numberOfLinesOfCode(0.10895552205027159)
+
+[Apache : LC]
+SumCyclomaticModified-ck_oo_numberOfLinesOfCode(0.05593213289083632)
+
+[Zxing : LC]
+CountLineCode-ck_oo_numberOfLinesOfCode(0.15729642546552935)
+
+[ar5 : LC]
+halstead_vocabulary-ck_oo_numberOfLinesOfCode(0.18534671216955945)
+unique_operators-ck_oo_wmc(0.1214276544259284)
+halstead_difficulty-ck_oo_rfc(0.20963092906594372)
+halstead_level-CvsLogEntropy(0.4570460260235042)
+
+[ar4 : LC]
+total_operands-ck_oo_numberOfLinesOfCode(0.183727413666243)
+
+[skarbonka : LC]
+rfc-ck_oo_rfc(0.11053910944912582)
+
+[tomcat : LC]
+rfc-ck_oo_rfc(0.2934640414137344)
+
+[Safe : JDT]
+CountStmtExe-ck_oo_lcom(0.17192099791074633)
+
+[Apache : JDT]
+SumCyclomaticModified-ck_oo_rfc(0.0506249551576794)
+
+[ar5 : JDT]
+halstead_vocabulary-ck_oo_rfc(0.07938230003175883)
+unique_operators-ck_oo_numberOfMethods(0.09443258493534656)
+
+[ar3 : JDT]
+cyclomatic_complexity-ck_oo_fanOut(0.0557446670532008)
+
+[skarbonka : JDT]
+rfc-ck_oo_wmc(0.20732936532638058)
+
+[Safe : ML]
+CountStmt-ck_oo_numberOfLinesOfCode(0.09261012319582251)
+
+[Apache : ML]
+SumCyclomaticModified-ck_oo_numberOfLinesOfCode(0.052829855945604964)
+
+[mw1 : ML]
+LOC_BLANK-ck_oo_cbo(0.06044642042451809)
+
+[ar5 : ML]
+halstead_vocabulary-ck_oo_numberOfLinesOfCode(0.2015258451543548)
+halstead_difficulty-ck_oo_rfc(0.19534372843650705)
+
+[ar4 : ML]
+total_operands-ck_oo_numberOfLinesOfCode(0.253617097669081)
+
+[skarbonka : ML]
+rfc-ck_oo_rfc(0.34264165111552236)
+
+
