@@ -900,5 +900,2763 @@ There might be bias in prediction results when defect ratio is very high. Thus, 
 </tbody>
 </table>
 </section>
+<section id=pc>
+<h2>D. Detailed Prediction Results by Source (WPDP vs. HDP, KSAnalyzer, cutoff=0.05, Gain Ratio)</h2>
+
+(Alphabetically ordered by source datasets)
+<table border=1>
+<tr>
+	<th>Prediction Combination<br>(source >> target)</th>
+	<th>WPDP (AUC)</th>
+	<th>HDP (AUC)</th>
+	<th>Win/Tie/Loss</th>
+	<th>Matched Metrics</th>
+
+</tr>
+<tr>
+	<td>ant-1.3 >> Apache</td>
+	<td>0.714</td>
+	<td>0.637</td>
+	<td>Loss</td>
+	<td>
+	rfc>>AvgLine(0.090)<br>
+	loc>>CountStmt(0.111)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> ar1</td>
+	<td>0.582</td>
+	<td>0.732</td>
+	<td>Win</td>
+	<td>
+	rfc>>total_operators(0.142)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> ar3</td>
+	<td>0.574</td>
+	<td>0.852</td>
+	<td>Win</td>
+	<td>
+	rfc>>unique_operands(0.924)<br>
+	loc>>halstead_length(0.410)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> ar4</td>
+	<td>0.657</td>
+	<td>0.832</td>
+	<td>Win</td>
+	<td>
+	rfc>>executable_loc(0.939)<br>
+	loc>>halstead_time(0.076)<br>
+	lcom>>branch_count(0.078)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> ar5</td>
+	<td>0.804</td>
+	<td>0.946</td>
+	<td>Win</td>
+	<td>
+	rfc>>unique_operands(0.907)<br>
+	loc>>halstead_length(0.243)<br>
+	lcom>>cyclomatic_complexity(0.065)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> ar6</td>
+	<td>0.654</td>
+	<td>0.681</td>
+	<td>Win</td>
+	<td>
+	rfc>>total_operators(0.415)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> cm1</td>
+	<td>0.653</td>
+	<td>0.722</td>
+	<td>Win</td>
+	<td>
+	rfc>>LOC_TOTAL(0.162)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> kc3</td>
+	<td>0.609</td>
+	<td>0.691</td>
+	<td>Win</td>
+	<td>
+	rfc>>NUMBER_OF_LINES(0.342)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> mc2</td>
+	<td>0.646</td>
+	<td>0.612</td>
+	<td>Loss</td>
+	<td>
+	rfc>>HALSTEAD_CONTENT(0.499)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> mw1</td>
+	<td>0.612</td>
+	<td>0.745</td>
+	<td>Win</td>
+	<td>
+	rfc>>NUMBER_OF_LINES(0.107)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> pc1</td>
+	<td>0.787</td>
+	<td>0.809</td>
+	<td>Win</td>
+	<td>
+	rfc>>NUMBER_OF_LINES(0.156)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> pc2</td>
+	<td>0.748</td>
+	<td>0.899</td>
+	<td>Win</td>
+	<td>
+	rfc>>HALSTEAD_LENGTH(0.069)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> pc3</td>
+	<td>0.794</td>
+	<td>0.769</td>
+	<td>Loss</td>
+	<td>
+	rfc>>NUMBER_OF_LINES(0.242)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> pc4</td>
+	<td>0.900</td>
+	<td>0.727</td>
+	<td>Loss</td>
+	<td>
+	rfc>>NUMBER_OF_LINES(0.096)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> PDE</td>
+	<td>0.684</td>
+	<td>0.719</td>
+	<td>Win</td>
+	<td>
+	rfc>>ck_oo_rfc(0.052)<br>
+	</td>
+</tr>
+<tr>
+	<td>ant-1.3 >> Safe</td>
+	<td>0.706</td>
+	<td>0.877</td>
+	<td>Win</td>
+	<td>
+	rfc>>CountLineCodeDecl(0.289)<br>
+	lcom>>SumCyclomaticModified(0.258)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> ar1</td>
+	<td>0.582</td>
+	<td>0.764</td>
+	<td>Win</td>
+	<td>
+	SumCyclomaticModified>>halstead_time(0.109)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> ar3</td>
+	<td>0.574</td>
+	<td>0.848</td>
+	<td>Win</td>
+	<td>
+	CountLine>>halstead_volume(0.586)<br>
+	SumCyclomaticModified>>total_loc(0.147)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> ar4</td>
+	<td>0.657</td>
+	<td>0.823</td>
+	<td>Win</td>
+	<td>
+	CountLineCode>>halstead_time(0.695)<br>
+	SumCyclomaticModified>>total_operands(0.076)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> ar5</td>
+	<td>0.804</td>
+	<td>0.911</td>
+	<td>Win</td>
+	<td>
+	CountLine>>halstead_volume(0.767)<br>
+	SumCyclomaticModified>>executable_loc(0.208)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> ar6</td>
+	<td>0.654</td>
+	<td>0.538</td>
+	<td>Loss</td>
+	<td>
+	SumCyclomaticModified>>halstead_time(0.161)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> cm1</td>
+	<td>0.653</td>
+	<td>0.720</td>
+	<td>Win</td>
+	<td>
+	CountLine>>HALSTEAD_VOLUME(0.107)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> EQ</td>
+	<td>0.583</td>
+	<td>0.782</td>
+	<td>Win</td>
+	<td>
+	SumCyclomaticModified>>ck_oo_numberOfLinesOfCode(0.067)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> JDT</td>
+	<td>0.795</td>
+	<td>0.767</td>
+	<td>Loss</td>
+	<td>
+	SumCyclomaticModified>>ck_oo_rfc(0.051)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> jm1</td>
+	<td>0.705</td>
+	<td>0.691</td>
+	<td>Loss</td>
+	<td>
+	CountLineCode>>HALSTEAD_VOLUME(0.363)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> LC</td>
+	<td>0.575</td>
+	<td>0.655</td>
+	<td>Win</td>
+	<td>
+	SumCyclomaticModified>>ck_oo_numberOfLinesOfCode(0.056)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> mc2</td>
+	<td>0.646</td>
+	<td>0.686</td>
+	<td>Win</td>
+	<td>
+	CountLine>>HALSTEAD_VOLUME(0.227)<br>
+	SumCyclomaticModified>>NUM_OPERANDS(0.077)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> ML</td>
+	<td>0.734</td>
+	<td>0.692</td>
+	<td>Loss</td>
+	<td>
+	SumCyclomaticModified>>ck_oo_numberOfLinesOfCode(0.053)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> mw1</td>
+	<td>0.612</td>
+	<td>0.709</td>
+	<td>Win</td>
+	<td>
+	CountLine>>HALSTEAD_VOLUME(0.088)<br>
+	CountLineCode>>HALSTEAD_PROG_TIME(0.494)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> pc1</td>
+	<td>0.787</td>
+	<td>0.751</td>
+	<td>Loss</td>
+	<td>
+	CountLine>>HALSTEAD_VOLUME(0.723)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> pc3</td>
+	<td>0.794</td>
+	<td>0.740</td>
+	<td>Loss</td>
+	<td>
+	CountLine>>HALSTEAD_VOLUME(0.255)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> pc4</td>
+	<td>0.900</td>
+	<td>0.684</td>
+	<td>Loss</td>
+	<td>
+	CountLineCode>>HALSTEAD_VOLUME(0.058)<br>
+	</td>
+</tr>
+<tr>
+	<td>Apache >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.694</td>
+	<td>Win</td>
+	<td>
+	SumCyclomaticModified>>amc(0.057)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar1 >> camel-1.0</td>
+	<td>0.550</td>
+	<td>0.485</td>
+	<td>Loss</td>
+	<td>
+	unique_operators>>amc(0.089)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar1 >> cm1</td>
+	<td>0.653</td>
+	<td>0.280</td>
+	<td>Loss</td>
+	<td>
+	halstead_level>>HALSTEAD_ERROR_EST(0.074)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar1 >> kc3</td>
+	<td>0.609</td>
+	<td>0.320</td>
+	<td>Loss</td>
+	<td>
+	halstead_level>>HALSTEAD_ERROR_EST(0.087)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> Apache</td>
+	<td>0.714</td>
+	<td>0.783</td>
+	<td>Win</td>
+	<td>
+	halstead_volume>>CountLine(0.586)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> cm1</td>
+	<td>0.653</td>
+	<td>0.720</td>
+	<td>Win</td>
+	<td>
+	halstead_volume>>HALSTEAD_VOLUME(0.597)<br>
+	halstead_error>>HALSTEAD_ERROR_EST(0.449)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> EQ</td>
+	<td>0.583</td>
+	<td>0.785</td>
+	<td>Win</td>
+	<td>
+	cyclomatic_complexity>>ck_oo_cbo(0.208)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> JDT</td>
+	<td>0.795</td>
+	<td>0.770</td>
+	<td>Loss</td>
+	<td>
+	cyclomatic_complexity>>ck_oo_fanOut(0.056)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> kc3</td>
+	<td>0.609</td>
+	<td>0.660</td>
+	<td>Win</td>
+	<td>
+	halstead_volume>>HALSTEAD_PROG_TIME(0.883)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> mc2</td>
+	<td>0.646</td>
+	<td>0.691</td>
+	<td>Win</td>
+	<td>
+	halstead_volume>>HALSTEAD_VOLUME(0.588)<br>
+	halstead_error>>HALSTEAD_ERROR_EST(0.674)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> mw1</td>
+	<td>0.612</td>
+	<td>0.748</td>
+	<td>Win</td>
+	<td>
+	halstead_volume>>HALSTEAD_VOLUME(0.139)<br>
+	halstead_error>>HALSTEAD_ERROR_EST(0.125)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> pc1</td>
+	<td>0.787</td>
+	<td>0.751</td>
+	<td>Loss</td>
+	<td>
+	halstead_volume>>HALSTEAD_VOLUME(0.487)<br>
+	halstead_error>>HALSTEAD_ERROR_EST(0.441)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> pc3</td>
+	<td>0.794</td>
+	<td>0.738</td>
+	<td>Loss</td>
+	<td>
+	halstead_volume>>HALSTEAD_VOLUME(0.347)<br>
+	halstead_error>>HALSTEAD_ERROR_EST(0.326)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> Safe</td>
+	<td>0.706</td>
+	<td>0.599</td>
+	<td>Loss</td>
+	<td>
+	comment_loc>>SumCyclomaticStrict(0.058)<br>
+	halstead_error>>RatioCommentToCode(0.249)<br>
+	cyclomatic_complexity>>SumCyclomaticModified(0.149)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar3 >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.688</td>
+	<td>Win</td>
+	<td>
+	comment_loc>>lcom(0.098)<br>
+	cyclomatic_complexity>>wmc(0.098)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> Apache</td>
+	<td>0.714</td>
+	<td>0.756</td>
+	<td>Win</td>
+	<td>
+	total_operators>>CountLineCodeDecl(0.261)<br>
+	total_operands>>CountStmtDecl(0.195)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> camel-1.0</td>
+	<td>0.550</td>
+	<td>0.639</td>
+	<td>Win</td>
+	<td>
+	total_operators>>loc(0.168)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> cm1</td>
+	<td>0.653</td>
+	<td>0.720</td>
+	<td>Win</td>
+	<td>
+	halstead_length>>HALSTEAD_LENGTH(0.367)<br>
+	total_operators>>NUM_OPERATORS(0.341)<br>
+	total_operands>>NUM_OPERANDS(0.703)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> jm1</td>
+	<td>0.705</td>
+	<td>0.685</td>
+	<td>Loss</td>
+	<td>
+	total_operators>>HALSTEAD_LENGTH(0.204)<br>
+	total_operands>>NUM_OPERATORS(0.226)<br>
+	unique_operators>>NUM_UNIQUE_OPERATORS(0.132)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> kc3</td>
+	<td>0.609</td>
+	<td>0.679</td>
+	<td>Win</td>
+	<td>
+	halstead_length>>HALSTEAD_LENGTH(0.197)<br>
+	total_operators>>NUM_OPERATORS(0.115)<br>
+	total_operands>>NUM_OPERANDS(0.251)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> LC</td>
+	<td>0.575</td>
+	<td>0.655</td>
+	<td>Win</td>
+	<td>
+	total_operands>>ck_oo_numberOfLinesOfCode(0.184)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> mc2</td>
+	<td>0.646</td>
+	<td>0.686</td>
+	<td>Win</td>
+	<td>
+	halstead_length>>HALSTEAD_LENGTH(0.187)<br>
+	total_operators>>NUM_OPERANDS(0.230)<br>
+	total_operands>>NUMBER_OF_LINES(0.764)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> ML</td>
+	<td>0.734</td>
+	<td>0.692</td>
+	<td>Loss</td>
+	<td>
+	total_operands>>ck_oo_numberOfLinesOfCode(0.254)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> mw1</td>
+	<td>0.612</td>
+	<td>0.663</td>
+	<td>Win</td>
+	<td>
+	total_operators>>HALSTEAD_LENGTH(0.098)<br>
+	total_operands>>NUM_OPERATORS(0.387)<br>
+	unique_operators>>HALSTEAD_DIFFICULTY(0.056)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> pc1</td>
+	<td>0.787</td>
+	<td>0.747</td>
+	<td>Loss</td>
+	<td>
+	halstead_length>>HALSTEAD_LENGTH(0.232)<br>
+	total_operators>>NUM_OPERATORS(0.139)<br>
+	total_operands>>NUM_OPERANDS(0.790)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> pc3</td>
+	<td>0.794</td>
+	<td>0.738</td>
+	<td>Loss</td>
+	<td>
+	total_operands>>NUM_OPERANDS(0.481)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> pc4</td>
+	<td>0.900</td>
+	<td>0.662</td>
+	<td>Loss</td>
+	<td>
+	total_operators>>HALSTEAD_LENGTH(0.459)<br>
+	total_operands>>NUM_OPERATORS(0.463)<br>
+	unique_operators>>NUM_UNIQUE_OPERATORS(0.282)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> PDE</td>
+	<td>0.684</td>
+	<td>0.717</td>
+	<td>Win</td>
+	<td>
+	total_operators>>ck_oo_numberOfLinesOfCode(0.214)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> poi-1.5</td>
+	<td>0.707</td>
+	<td>0.615</td>
+	<td>Loss</td>
+	<td>
+	unique_operators>>amc(0.081)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> redaktor</td>
+	<td>0.744</td>
+	<td>0.556</td>
+	<td>Loss</td>
+	<td>
+	unique_operators>>cbo(0.126)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> Safe</td>
+	<td>0.706</td>
+	<td>0.837</td>
+	<td>Win</td>
+	<td>
+	halstead_length>>CountLine(0.490)<br>
+	total_operators>>CountLineCode(0.055)<br>
+	total_operands>>CountSemicolon(0.188)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> velocity-1.4</td>
+	<td>0.725</td>
+	<td>0.391</td>
+	<td>Loss</td>
+	<td>
+	halstead_length>>loc(0.097)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar4 >> ZXing</td>
+	<td>0.605</td>
+	<td>0.656</td>
+	<td>Win</td>
+	<td>
+	total_operators>>CountLine(0.111)<br>
+	total_operands>>CountLineCode(0.473)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.840</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>rfc(0.117)<br>
+	halstead_difficulty>>wmc(0.086)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> Apache</td>
+	<td>0.714</td>
+	<td>0.670</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>AvgLine(0.473)<br>
+	unique_operators>>MaxCyclomaticModified(0.064)<br>
+	halstead_difficulty>>MaxCyclomatic(0.516)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> arc</td>
+	<td>0.670</td>
+	<td>0.701</td>
+	<td>Win</td>
+	<td>
+	halstead_difficulty>>rfc(0.644)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> camel-1.0</td>
+	<td>0.550</td>
+	<td>0.485</td>
+	<td>Loss</td>
+	<td>
+	unique_operators>>amc(0.080)<br>
+	halstead_difficulty>>rfc(0.829)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> cm1</td>
+	<td>0.653</td>
+	<td>0.701</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>HALSTEAD_CONTENT(0.986)<br>
+	unique_operators>>CONDITION_COUNT(0.157)<br>
+	halstead_difficulty>>LOC_BLANK(0.189)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> JDT</td>
+	<td>0.795</td>
+	<td>0.767</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>ck_oo_rfc(0.079)<br>
+	unique_operators>>ck_oo_numberOfMethods(0.094)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> jm1</td>
+	<td>0.705</td>
+	<td>0.669</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>NUM_OPERATORS(0.222)<br>
+	unique_operators>>NUM_UNIQUE_OPERATORS(0.642)<br>
+	halstead_difficulty>>NUM_UNIQUE_OPERANDS(0.858)<br>
+	halstead_level>>HALSTEAD_LEVEL(0.720)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> kc3</td>
+	<td>0.609</td>
+	<td>0.687</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>HALSTEAD_CONTENT(0.682)<br>
+	halstead_difficulty>>CONDITION_COUNT(0.152)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> LC</td>
+	<td>0.575</td>
+	<td>0.239</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>ck_oo_numberOfLinesOfCode(0.185)<br>
+	unique_operators>>ck_oo_wmc(0.121)<br>
+	halstead_difficulty>>ck_oo_rfc(0.210)<br>
+	halstead_level>>CvsLogEntropy(0.457)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> mc1</td>
+	<td>0.863</td>
+	<td>0.893</td>
+	<td>Win</td>
+	<td>
+	halstead_difficulty>>HALSTEAD_CONTENT(0.067)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> mc2</td>
+	<td>0.646</td>
+	<td>0.706</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>NUMBER_OF_LINES(0.439)<br>
+	unique_operators>>BRANCH_COUNT(0.147)<br>
+	halstead_difficulty>>CONDITION_COUNT(0.368)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> ML</td>
+	<td>0.734</td>
+	<td>0.692</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>ck_oo_numberOfLinesOfCode(0.202)<br>
+	halstead_difficulty>>ck_oo_rfc(0.195)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> mw1</td>
+	<td>0.612</td>
+	<td>0.285</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>HALSTEAD_CONTENT(0.703)<br>
+	unique_operators>>HALSTEAD_DIFFICULTY(0.577)<br>
+	halstead_difficulty>>PERCENT_COMMENTS(0.148)<br>
+	halstead_level>>HALSTEAD_ERROR_EST(0.190)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> pc1</td>
+	<td>0.787</td>
+	<td>0.732</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>NUM_OPERANDS(0.468)<br>
+	unique_operators>>BRANCH_COUNT(0.053)<br>
+	halstead_difficulty>>CONDITION_COUNT(0.295)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> pc2</td>
+	<td>0.748</td>
+	<td>0.896</td>
+	<td>Win</td>
+	<td>
+	unique_operators>>NUMBER_OF_LINES(0.337)<br>
+	halstead_difficulty>>NUM_OPERANDS(0.932)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> pc3</td>
+	<td>0.794</td>
+	<td>0.709</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>NUM_OPERANDS(0.473)<br>
+	unique_operators>>CONDITION_COUNT(0.327)<br>
+	halstead_difficulty>>HALSTEAD_DIFFICULTY(0.084)<br>
+	halstead_level>>HALSTEAD_LEVEL(0.112)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> pc4</td>
+	<td>0.900</td>
+	<td>0.639</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>NUM_OPERATORS(0.508)<br>
+	unique_operators>>NUM_UNIQUE_OPERANDS(0.427)<br>
+	halstead_difficulty>>LOC_EXECUTABLE(0.993)<br>
+	halstead_level>>HALSTEAD_LEVEL(0.885)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> pc5</td>
+	<td>0.954</td>
+	<td>0.950</td>
+	<td>Loss</td>
+	<td>
+	halstead_difficulty>>HALSTEAD_VOLUME(0.127)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> PDE</td>
+	<td>0.684</td>
+	<td>0.692</td>
+	<td>Win</td>
+	<td>
+	halstead_difficulty>>ck_oo_wmc(0.796)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> poi-1.5</td>
+	<td>0.707</td>
+	<td>0.722</td>
+	<td>Win</td>
+	<td>
+	unique_operators>>wmc(0.612)<br>
+	halstead_difficulty>>amc(0.425)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> redaktor</td>
+	<td>0.744</td>
+	<td>0.403</td>
+	<td>Loss</td>
+	<td>
+	unique_operators>>wmc(0.146)<br>
+	halstead_difficulty>>cbo(0.054)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> Safe</td>
+	<td>0.706</td>
+	<td>0.829</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>CountSemicolon(0.197)<br>
+	unique_operators>>AvgLineCode(0.265)<br>
+	halstead_difficulty>>AvgLine(0.606)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.789</td>
+	<td>Win</td>
+	<td>
+	halstead_difficulty>>rfc(0.068)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> tomcat</td>
+	<td>0.778</td>
+	<td>0.737</td>
+	<td>Loss</td>
+	<td>
+	halstead_difficulty>>amc(0.429)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> velocity-1.4</td>
+	<td>0.725</td>
+	<td>0.316</td>
+	<td>Loss</td>
+	<td>
+	halstead_difficulty>>amc(0.235)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> xalan-2.4</td>
+	<td>0.755</td>
+	<td>0.673</td>
+	<td>Loss</td>
+	<td>
+	unique_operators>>cbo(0.117)<br>
+	halstead_difficulty>>amc(0.247)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> xerces-1.2</td>
+	<td>0.624</td>
+	<td>0.489</td>
+	<td>Loss</td>
+	<td>
+	halstead_difficulty>>rfc(0.681)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar5 >> ZXing</td>
+	<td>0.605</td>
+	<td>0.658</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>CountLineCode(0.346)<br>
+	unique_operators>>CountStmtDecl(0.171)<br>
+	halstead_difficulty>>CountLineCodeDecl(0.797)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.656</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>amc(0.095)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> cm1</td>
+	<td>0.653</td>
+	<td>0.740</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>NUM_UNIQUE_OPERANDS(0.061)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> kc3</td>
+	<td>0.609</td>
+	<td>0.678</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>NUM_UNIQUE_OPERANDS(0.327)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> mc2</td>
+	<td>0.646</td>
+	<td>0.709</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>HALSTEAD_DIFFICULTY(0.206)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> mw1</td>
+	<td>0.612</td>
+	<td>0.747</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>EDGE_COUNT(0.513)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> pc1</td>
+	<td>0.787</td>
+	<td>0.757</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>LOC_EXECUTABLE(0.417)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> pc2</td>
+	<td>0.748</td>
+	<td>0.893</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>NUM_OPERATORS(0.077)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> pc3</td>
+	<td>0.794</td>
+	<td>0.723</td>
+	<td>Loss</td>
+	<td>
+	halstead_vocabulary>>LOC_TOTAL(0.358)<br>
+	</td>
+</tr>
+<tr>
+	<td>ar6 >> Safe</td>
+	<td>0.706</td>
+	<td>0.874</td>
+	<td>Win</td>
+	<td>
+	halstead_vocabulary>>CountStmtDecl(0.112)<br>
+	</td>
+</tr>
+<tr>
+	<td>arc >> Apache</td>
+	<td>0.714</td>
+	<td>0.701</td>
+	<td>Loss</td>
+	<td>
+	rfc>>MaxCyclomaticModified(0.474)<br>
+	loc>>SumCyclomaticStrict(0.286)<br>
+	</td>
+</tr>
+<tr>
+	<td>arc >> ar1</td>
+	<td>0.582</td>
+	<td>0.630</td>
+	<td>Win</td>
+	<td>
+	rfc>>total_loc(0.220)<br>
+	loc>>halstead_time(0.272)<br>
+	</td>
+</tr>
+<tr>
+	<td>arc >> ar3</td>
+	<td>0.574</td>
+	<td>0.690</td>
+	<td>Win</td>
+	<td>
+	ce>>design_complexity(0.091)<br>
+	rfc>>blank_loc(0.394)<br>
+	loc>>total_loc(0.080)<br>
+	</td>
+</tr>
+<tr>
+	<td>arc >> ar4</td>
+	<td>0.657</td>
+	<td>0.798</td>
+	<td>Win</td>
+	<td>
+	rfc>>halstead_difficulty(0.094)<br>
+	</td>
+</tr>
+<tr>
+	<td>arc >> ar5</td>
+	<td>0.804</td>
+	<td>0.688</td>
+	<td>Loss</td>
+	<td>
+	ce>>call_pairs(0.478)<br>
+	rfc>>blank_loc(0.781)<br>
+	loc>>total_loc(0.089)<br>
+	</td>
+</tr>
+<tr>
+	<td>arc >> ar6</td>
+	<td>0.654</td>
+	<td>0.642</td>
+	<td>Tie</td>
+	<td>
+	rfc>>executable_loc(0.070)<br>
+	loc>>halstead_time(0.443)<br>
+	</td>
+</tr>
+<tr>
+	<td>arc >> Safe</td>
+	<td>0.706</td>
+	<td>0.524</td>
+	<td>Loss</td>
+	<td>
+	rfc>>AvgLine(0.154)<br>
+	loc>>CountStmt(0.719)<br>
+	</td>
+</tr>
+<tr>
+	<td>arc >> ZXing</td>
+	<td>0.605</td>
+	<td>0.647</td>
+	<td>Win</td>
+	<td>
+	rfc>>CountStmtExe(0.203)<br>
+	</td>
+</tr>
+<tr>
+	<td>camel-1.0 >> ar5</td>
+	<td>0.804</td>
+	<td>0.911</td>
+	<td>Win</td>
+	<td>
+	ca>>design_complexity(0.096)<br>
+	cbo>>cyclomatic_complexity(0.065)<br>
+	</td>
+</tr>
+<tr>
+	<td>camel-1.0 >> kc3</td>
+	<td>0.609</td>
+	<td>0.694</td>
+	<td>Win</td>
+	<td>
+	cbo>>CALL_PAIRS(0.091)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.656</td>
+	<td>Win</td>
+	<td>
+	LOC_EXECUTABLE>>amc(0.196)<br>
+	LOC_TOTAL>>rfc(0.162)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> ar3</td>
+	<td>0.574</td>
+	<td>0.844</td>
+	<td>Win</td>
+	<td>
+	LOC_EXECUTABLE>>unique_operands(0.814)<br>
+	LOC_TOTAL>>executable_loc(0.115)<br>
+	HALSTEAD_CONTENT>>halstead_vocabulary(0.549)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> ar4</td>
+	<td>0.657</td>
+	<td>0.791</td>
+	<td>Win</td>
+	<td>
+	LOC_EXECUTABLE>>executable_loc(0.218)<br>
+	LOC_COMMENTS>>branch_count(0.109)<br>
+	HALSTEAD_CONTENT>>total_operands(0.169)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> ar5</td>
+	<td>0.804</td>
+	<td>0.964</td>
+	<td>Win</td>
+	<td>
+	LOC_EXECUTABLE>>executable_loc(0.291)<br>
+	LOC_TOTAL>>total_loc(0.053)<br>
+	LOC_COMMENTS>>cyclomatic_complexity(0.059)<br>
+	HALSTEAD_CONTENT>>halstead_vocabulary(0.986)<br>
+	PERCENT_COMMENTS>>unique_operands(0.277)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> ar6</td>
+	<td>0.654</td>
+	<td>0.630</td>
+	<td>Loss</td>
+	<td>
+	HALSTEAD_CONTENT>>halstead_length(0.075)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> kc3</td>
+	<td>0.609</td>
+	<td>0.687</td>
+	<td>Win</td>
+	<td>
+	LOC_EXECUTABLE>>EDGE_COUNT(0.388)<br>
+	LOC_TOTAL>>NUMBER_OF_LINES(0.136)<br>
+	HALSTEAD_CONTENT>>HALSTEAD_CONTENT(0.084)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> mc2</td>
+	<td>0.646</td>
+	<td>0.701</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>HALSTEAD_CONTENT(0.653)<br>
+	HALSTEAD_CONTENT>>NUMBER_OF_LINES(0.068)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> Safe</td>
+	<td>0.706</td>
+	<td>0.786</td>
+	<td>Win</td>
+	<td>
+	LOC_COMMENTS>>SumCyclomaticModified(0.128)<br>
+	PERCENT_COMMENTS>>CountLineCodeDecl(0.052)<br>
+	</td>
+</tr>
+<tr>
+	<td>cm1 >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.633</td>
+	<td>Win</td>
+	<td>
+	LOC_COMMENTS>>lcom(0.307)<br>
+	PERCENT_COMMENTS>>rfc(0.125)<br>
+	</td>
+</tr>
+<tr>
+	<td>EQ >> ar3</td>
+	<td>0.574</td>
+	<td>0.823</td>
+	<td>Win</td>
+	<td>
+	ck_oo_numberOfMethods>>cyclomatic_complexity(0.208)<br>
+	</td>
+</tr>
+<tr>
+	<td>EQ >> ar4</td>
+	<td>0.657</td>
+	<td>0.794</td>
+	<td>Win</td>
+	<td>
+	ck_oo_numberOfMethods>>cyclomatic_complexity(0.208)<br>
+	</td>
+</tr>
+<tr>
+	<td>EQ >> ar5</td>
+	<td>0.804</td>
+	<td>0.911</td>
+	<td>Win</td>
+	<td>
+	ck_oo_numberOfAttributes>>design_complexity(0.082)<br>
+	ck_oo_numberOfMethods>>cyclomatic_complexity(0.351)<br>
+	</td>
+</tr>
+<tr>
+	<td>EQ >> Safe</td>
+	<td>0.706</td>
+	<td>0.770</td>
+	<td>Win</td>
+	<td>
+	ck_oo_numberOfMethods>>SumEssential(0.080)<br>
+	ck_oo_lcom>>SumCyclomaticStrict(0.120)<br>
+	</td>
+</tr>
+<tr>
+	<td>EQ >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.733</td>
+	<td>Win</td>
+	<td>
+	ck_oo_numberOfMethods>>wmc(0.777)<br>
+	ck_oo_lcom>>lcom(0.454)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> Apache</td>
+	<td>0.714</td>
+	<td>0.776</td>
+	<td>Win</td>
+	<td>
+	ck_oo_rfc>>SumCyclomaticModified(0.051)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> ar1</td>
+	<td>0.582</td>
+	<td>0.736</td>
+	<td>Win</td>
+	<td>
+	ck_oo_rfc>>halstead_length(0.085)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> ar3</td>
+	<td>0.574</td>
+	<td>0.839</td>
+	<td>Win</td>
+	<td>
+	ck_oo_rfc>>executable_loc(0.899)<br>
+	ck_oo_numberOfLinesOfCode>>total_operators(0.894)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> ar4</td>
+	<td>0.657</td>
+	<td>0.791</td>
+	<td>Win</td>
+	<td>
+	numberOfBugsFoundUntil:>>decision_count(0.050)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> ar5</td>
+	<td>0.804</td>
+	<td>0.911</td>
+	<td>Win</td>
+	<td>
+	ck_oo_rfc>>executable_loc(0.850)<br>
+	ck_oo_numberOfLinesOfCode>>total_operators(0.804)<br>
+	numberOfBugsFoundUntil:>>cyclomatic_complexity(0.065)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> ar6</td>
+	<td>0.654</td>
+	<td>0.681</td>
+	<td>Win</td>
+	<td>
+	ck_oo_rfc>>total_operators(0.151)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> mc2</td>
+	<td>0.646</td>
+	<td>0.678</td>
+	<td>Win</td>
+	<td>
+	ck_oo_rfc>>LOC_TOTAL(0.151)<br>
+	ck_oo_numberOfLinesOfCode>>NUM_OPERATORS(0.141)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> Safe</td>
+	<td>0.706</td>
+	<td>0.791</td>
+	<td>Win</td>
+	<td>
+	ck_oo_rfc>>CountLineCodeDecl(0.286)<br>
+	ck_oo_numberOfLinesOfCode>>CountLineCode(0.333)<br>
+	numberOfBugsFoundUntil:>>SumEssential(0.283)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.679</td>
+	<td>Win</td>
+	<td>
+	ck_oo_rfc>>rfc(0.075)<br>
+	numberOfBugsFoundUntil:>>npm(0.185)<br>
+	</td>
+</tr>
+<tr>
+	<td>JDT >> velocity-1.4</td>
+	<td>0.725</td>
+	<td>0.391</td>
+	<td>Loss</td>
+	<td>
+	ck_oo_numberOfLinesOfCode>>loc(0.191)<br>
+	</td>
+</tr>
+<tr>
+	<td>jm1 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.656</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>amc(0.191)<br>
+	</td>
+</tr>
+<tr>
+	<td>jm1 >> Apache</td>
+	<td>0.714</td>
+	<td>0.756</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_VOLUME>>CountLineCode(0.363)<br>
+	HALSTEAD_LENGTH>>CountLineCodeDecl(0.238)<br>
+	</td>
+</tr>
+<tr>
+	<td>jm1 >> ar3</td>
+	<td>0.574</td>
+	<td>0.852</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>unique_operands(0.182)<br>
+	HALSTEAD_LENGTH>>total_operands(0.811)<br>
+	</td>
+</tr>
+<tr>
+	<td>jm1 >> ar4</td>
+	<td>0.657</td>
+	<td>0.820</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>blank_loc(0.099)<br>
+	HALSTEAD_VOLUME>>halstead_time(0.200)<br>
+	HALSTEAD_LENGTH>>total_loc(0.276)<br>
+	</td>
+</tr>
+<tr>
+	<td>jm1 >> ar5</td>
+	<td>0.804</td>
+	<td>0.946</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>unique_operands(0.440)<br>
+	HALSTEAD_VOLUME>>halstead_volume(0.114)<br>
+	HALSTEAD_LENGTH>>total_operands(0.899)<br>
+	</td>
+</tr>
+<tr>
+	<td>jm1 >> ar6</td>
+	<td>0.654</td>
+	<td>0.681</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>total_operators(0.169)<br>
+	</td>
+</tr>
+<tr>
+	<td>jm1 >> mc2</td>
+	<td>0.646</td>
+	<td>0.680</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>LOC_EXECUTABLE(0.177)<br>
+	HALSTEAD_LENGTH>>NUM_OPERATORS(0.360)<br>
+	</td>
+</tr>
+<tr>
+	<td>jm1 >> Safe</td>
+	<td>0.706</td>
+	<td>0.877</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>CountLineCodeDecl(0.795)<br>
+	HALSTEAD_LENGTH>>CountLineCode(0.374)<br>
+	</td>
+</tr>
+<tr>
+	<td>kc3 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.800</td>
+	<td>Win</td>
+	<td>
+	CALL_PAIRS>>wmc(0.376)<br>
+	</td>
+</tr>
+<tr>
+	<td>kc3 >> ar5</td>
+	<td>0.804</td>
+	<td>0.688</td>
+	<td>Loss</td>
+	<td>
+	LOC_BLANK>>call_pairs(0.082)<br>
+	</td>
+</tr>
+<tr>
+	<td>kc3 >> camel-1.0</td>
+	<td>0.550</td>
+	<td>0.771</td>
+	<td>Win</td>
+	<td>
+	CALL_PAIRS>>cbo(0.091)<br>
+	</td>
+</tr>
+<tr>
+	<td>kc3 >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.689</td>
+	<td>Win</td>
+	<td>
+	CYCLOMATIC_COMPLEXITY>>cbo(0.068)<br>
+	</td>
+</tr>
+<tr>
+	<td>kc3 >> velocity-1.4</td>
+	<td>0.725</td>
+	<td>0.589</td>
+	<td>Loss</td>
+	<td>
+	CALL_PAIRS>>cbo(0.103)<br>
+	</td>
+</tr>
+<tr>
+	<td>LC >> ar5</td>
+	<td>0.804</td>
+	<td>0.688</td>
+	<td>Loss</td>
+	<td>
+	CvsEntropy>>design_complexity(0.065)<br>
+	</td>
+</tr>
+<tr>
+	<td>LC >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.660</td>
+	<td>Win</td>
+	<td>
+	CvsEntropy>>npm(0.063)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc1 >> ar3</td>
+	<td>0.574</td>
+	<td>0.830</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_VOLUME>>executable_loc(0.058)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc1 >> ar5</td>
+	<td>0.804</td>
+	<td>0.911</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_VOLUME>>executable_loc(0.143)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc1 >> Safe</td>
+	<td>0.706</td>
+	<td>0.856</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_VOLUME>>CountSemicolon(0.261)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.656</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>amc(0.552)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> Apache</td>
+	<td>0.714</td>
+	<td>0.630</td>
+	<td>Loss</td>
+	<td>
+	GLOBAL_DATA_COMPLEXITY>>AvgCyclomaticModified(0.153)<br>
+	HALSTEAD_DIFFICULTY>>AvgLineCode(0.215)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> ar1</td>
+	<td>0.582</td>
+	<td>0.741</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_PROG_TIME>>halstead_effort(0.578)<br>
+	NODE_COUNT>>halstead_vocabulary(0.439)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> ar3</td>
+	<td>0.574</td>
+	<td>0.852</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>unique_operands(0.061)<br>
+	HALSTEAD_EFFORT>>halstead_effort(0.092)<br>
+	HALSTEAD_PROG_TIME>>halstead_time(0.092)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> ar4</td>
+	<td>0.657</td>
+	<td>0.811</td>
+	<td>Win</td>
+	<td>
+	GLOBAL_DATA_COMPLEXITY>>cyclomatic_complexity(0.063)<br>
+	HALSTEAD_DIFFICULTY>>unique_operands(0.939)<br>
+	NODE_COUNT>>blank_loc(0.194)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> ar5</td>
+	<td>0.804</td>
+	<td>0.946</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>unique_operands(0.260)<br>
+	HALSTEAD_EFFORT>>halstead_effort(0.069)<br>
+	HALSTEAD_PROG_TIME>>halstead_time(0.069)<br>
+	NODE_COUNT>>halstead_difficulty(0.105)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> ar6</td>
+	<td>0.654</td>
+	<td>0.714</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>halstead_vocabulary(0.206)<br>
+	HALSTEAD_PROG_TIME>>halstead_effort(0.440)<br>
+	NODE_COUNT>>total_loc(0.148)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> camel-1.0</td>
+	<td>0.550</td>
+	<td>0.765</td>
+	<td>Win</td>
+	<td>
+	GLOBAL_DATA_COMPLEXITY>>npm(0.078)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> cm1</td>
+	<td>0.653</td>
+	<td>0.727</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>NUM_UNIQUE_OPERANDS(0.367)<br>
+	NODE_COUNT>>EDGE_COUNT(0.629)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> jm1</td>
+	<td>0.705</td>
+	<td>0.709</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>LOC_TOTAL(0.126)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> mw1</td>
+	<td>0.612</td>
+	<td>0.774</td>
+	<td>Win</td>
+	<td>
+	GLOBAL_DATA_COMPLEXITY>>CALL_PAIRS(0.101)<br>
+	HALSTEAD_DIFFICULTY>>NUM_UNIQUE_OPERANDS(0.547)<br>
+	NODE_COUNT>>NODE_COUNT(0.164)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> pc1</td>
+	<td>0.787</td>
+	<td>0.778</td>
+	<td>Loss</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>LOC_TOTAL(0.490)<br>
+	NODE_COUNT>>NUM_UNIQUE_OPERANDS(0.267)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> pc2</td>
+	<td>0.748</td>
+	<td>0.893</td>
+	<td>Win</td>
+	<td>
+	NODE_COUNT>>NUM_OPERATORS(0.125)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> pc3</td>
+	<td>0.794</td>
+	<td>0.718</td>
+	<td>Loss</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>LOC_TOTAL(0.271)<br>
+	NODE_COUNT>>EDGE_COUNT(0.252)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> pc4</td>
+	<td>0.900</td>
+	<td>0.680</td>
+	<td>Loss</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>HALSTEAD_CONTENT(0.058)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> poi-1.5</td>
+	<td>0.707</td>
+	<td>0.727</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>rfc(0.255)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> redaktor</td>
+	<td>0.744</td>
+	<td>0.499</td>
+	<td>Loss</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>rfc(0.098)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> Safe</td>
+	<td>0.706</td>
+	<td>0.882</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>CountLineCodeDecl(0.370)<br>
+	NODE_COUNT>>CountStmtDecl(0.128)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.789</td>
+	<td>Win</td>
+	<td>
+	GLOBAL_DATA_COMPLEXITY>>npm(0.608)<br>
+	HALSTEAD_DIFFICULTY>>rfc(0.065)<br>
+	</td>
+</tr>
+<tr>
+	<td>mc2 >> velocity-1.4</td>
+	<td>0.725</td>
+	<td>0.444</td>
+	<td>Loss</td>
+	<td>
+	HALSTEAD_DIFFICULTY>>rfc(0.086)<br>
+	</td>
+</tr>
+<tr>
+	<td>ML >> ar4</td>
+	<td>0.657</td>
+	<td>0.794</td>
+	<td>Win</td>
+	<td>
+	numberOfBugsFoundUntil:>>cyclomatic_complexity(0.136)<br>
+	</td>
+</tr>
+<tr>
+	<td>ML >> mc2</td>
+	<td>0.646</td>
+	<td>0.714</td>
+	<td>Win</td>
+	<td>
+	numberOfBugsFoundUntil:>>MODIFIED_CONDITION_COUNT(0.064)<br>
+	</td>
+</tr>
+<tr>
+	<td>ML >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.660</td>
+	<td>Win</td>
+	<td>
+	numberOfBugsFoundUntil:>>npm(0.617)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.840</td>
+	<td>Win</td>
+	<td>
+	NUMBER_OF_LINES>>rfc(0.107)<br>
+	LOC_BLANK>>ce(0.147)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> Apache</td>
+	<td>0.714</td>
+	<td>0.637</td>
+	<td>Loss</td>
+	<td>
+	NUMBER_OF_LINES>>AvgLine(0.066)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> ar1</td>
+	<td>0.582</td>
+	<td>0.734</td>
+	<td>Win</td>
+	<td>
+	EDGE_COUNT>>halstead_vocabulary(0.442)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> ar3</td>
+	<td>0.574</td>
+	<td>0.852</td>
+	<td>Win</td>
+	<td>
+	NUMBER_OF_LINES>>unique_operands(0.216)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> ar4</td>
+	<td>0.657</td>
+	<td>0.827</td>
+	<td>Win</td>
+	<td>
+	EDGE_COUNT>>unique_operands(0.507)<br>
+	NUMBER_OF_LINES>>halstead_vocabulary(0.198)<br>
+	LOC_BLANK>>cyclomatic_complexity(0.260)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> ar5</td>
+	<td>0.804</td>
+	<td>0.946</td>
+	<td>Win</td>
+	<td>
+	EDGE_COUNT>>unique_operands(0.238)<br>
+	NUMBER_OF_LINES>>halstead_vocabulary(0.326)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> ar6</td>
+	<td>0.654</td>
+	<td>0.708</td>
+	<td>Win</td>
+	<td>
+	EDGE_COUNT>>halstead_vocabulary(0.513)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> kc3</td>
+	<td>0.609</td>
+	<td>0.663</td>
+	<td>Win</td>
+	<td>
+	EDGE_COUNT>>LOC_EXECUTABLE(0.360)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> mc2</td>
+	<td>0.646</td>
+	<td>0.720</td>
+	<td>Win</td>
+	<td>
+	NODE_COUNT>>NODE_COUNT(0.164)<br>
+	EDGE_COUNT>>HALSTEAD_DIFFICULTY(0.333)<br>
+	NUMBER_OF_LINES>>HALSTEAD_CONTENT(0.499)<br>
+	LOC_BLANK>>MODIFIED_CONDITION_COUNT(0.169)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> ML</td>
+	<td>0.734</td>
+	<td>0.702</td>
+	<td>Loss</td>
+	<td>
+	LOC_BLANK>>ck_oo_cbo(0.060)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> redaktor</td>
+	<td>0.744</td>
+	<td>0.633</td>
+	<td>Loss</td>
+	<td>
+	LOC_BLANK>>ce(0.081)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> Safe</td>
+	<td>0.706</td>
+	<td>0.874</td>
+	<td>Win</td>
+	<td>
+	NODE_COUNT>>CountStmtDecl(0.051)<br>
+	EDGE_COUNT>>CountLineCodeDecl(0.212)<br>
+	</td>
+</tr>
+<tr>
+	<td>mw1 >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.700</td>
+	<td>Win</td>
+	<td>
+	LOC_BLANK>>wmc(0.292)<br>
+	DESIGN_COMPLEXITY>>npm(0.069)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.840</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_CONTENT>>rfc(0.111)<br>
+	LOC_TOTAL>>amc(0.072)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> ar1</td>
+	<td>0.582</td>
+	<td>0.734</td>
+	<td>Win</td>
+	<td>
+	NUM_UNIQUE_OPERANDS>>halstead_vocabulary(0.132)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> ar3</td>
+	<td>0.574</td>
+	<td>0.830</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_CONTENT>>executable_loc(0.073)<br>
+	LOC_TOTAL>>unique_operands(0.078)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> ar4</td>
+	<td>0.657</td>
+	<td>0.849</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_CONTENT>>halstead_vocabulary(0.067)<br>
+	LOC_TOTAL>>unique_operands(0.411)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> ar5</td>
+	<td>0.804</td>
+	<td>0.946</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_CONTENT>>halstead_vocabulary(0.155)<br>
+	NUM_UNIQUE_OPERANDS>>halstead_difficulty(0.068)<br>
+	LOC_TOTAL>>unique_operands(0.261)<br>
+	LOC_EXECUTABLE>>executable_loc(0.069)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> ar6</td>
+	<td>0.654</td>
+	<td>0.708</td>
+	<td>Win</td>
+	<td>
+	LOC_EXECUTABLE>>halstead_vocabulary(0.417)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> kc3</td>
+	<td>0.609</td>
+	<td>0.668</td>
+	<td>Win</td>
+	<td>
+	LOC_TOTAL>>LOC_TOTAL(0.677)<br>
+	LOC_EXECUTABLE>>LOC_EXECUTABLE(0.434)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> mc2</td>
+	<td>0.646</td>
+	<td>0.612</td>
+	<td>Loss</td>
+	<td>
+	HALSTEAD_CONTENT>>HALSTEAD_CONTENT(0.813)<br>
+	NUM_UNIQUE_OPERANDS>>NUM_UNIQUE_OPERANDS(0.386)<br>
+	LOC_TOTAL>>HALSTEAD_DIFFICULTY(0.490)<br>
+	LOC_EXECUTABLE>>EDGE_COUNT(0.196)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc1 >> Safe</td>
+	<td>0.706</td>
+	<td>0.874</td>
+	<td>Win</td>
+	<td>
+	NUM_UNIQUE_OPERANDS>>CountStmtDecl(0.177)<br>
+	LOC_EXECUTABLE>>CountLineCodeDecl(0.177)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc2 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.822</td>
+	<td>Win</td>
+	<td>
+	CYCLOMATIC_DENSITY>>cam(0.054)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc2 >> ar5</td>
+	<td>0.804</td>
+	<td>0.893</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_CONTENT>>halstead_difficulty(0.051)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc2 >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.689</td>
+	<td>Win</td>
+	<td>
+	CYCLOMATIC_DENSITY>>cam(0.073)<br>
+	NUM_UNIQUE_OPERANDS>>cbo(0.059)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.840</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_CONTENT>>rfc(0.068)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> ar1</td>
+	<td>0.582</td>
+	<td>0.734</td>
+	<td>Win</td>
+	<td>
+	NUM_UNIQUE_OPERANDS>>halstead_vocabulary(0.363)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> ar3</td>
+	<td>0.574</td>
+	<td>0.852</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_CONTENT>>unique_operands(0.308)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> ar4</td>
+	<td>0.657</td>
+	<td>0.812</td>
+	<td>Win</td>
+	<td>
+	NUM_UNIQUE_OPERANDS>>unique_operands(0.101)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> ar5</td>
+	<td>0.804</td>
+	<td>0.911</td>
+	<td>Win</td>
+	<td>
+	LOC_BLANK>>cyclomatic_complexity(0.064)<br>
+	HALSTEAD_CONTENT>>unique_operands(0.267)<br>
+	NUM_UNIQUE_OPERANDS>>halstead_difficulty(0.076)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> ar6</td>
+	<td>0.654</td>
+	<td>0.708</td>
+	<td>Win</td>
+	<td>
+	NUM_UNIQUE_OPERANDS>>halstead_vocabulary(0.099)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> mc2</td>
+	<td>0.646</td>
+	<td>0.660</td>
+	<td>Win</td>
+	<td>
+	HALSTEAD_CONTENT>>HALSTEAD_CONTENT(0.901)<br>
+	NUM_UNIQUE_OPERANDS>>NUM_UNIQUE_OPERANDS(0.326)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> Safe</td>
+	<td>0.706</td>
+	<td>0.773</td>
+	<td>Win</td>
+	<td>
+	LOC_BLANK>>SumEssential(0.262)<br>
+	NUM_UNIQUE_OPERANDS>>CountStmtDecl(0.170)<br>
+	</td>
+</tr>
+<tr>
+	<td>pc3 >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.660</td>
+	<td>Win</td>
+	<td>
+	LOC_BLANK>>npm(0.098)<br>
+	</td>
+</tr>
+<tr>
+	<td>poi-1.5 >> ar1</td>
+	<td>0.582</td>
+	<td>0.700</td>
+	<td>Win</td>
+	<td>
+	wmc>>unique_operands(0.068)<br>
+	</td>
+</tr>
+<tr>
+	<td>poi-1.5 >> ar3</td>
+	<td>0.574</td>
+	<td>0.823</td>
+	<td>Win</td>
+	<td>
+	wmc>>unique_operators(0.189)<br>
+	loc>>halstead_length(0.349)<br>
+	</td>
+</tr>
+<tr>
+	<td>poi-1.5 >> ar4</td>
+	<td>0.657</td>
+	<td>0.798</td>
+	<td>Win</td>
+	<td>
+	wmc>>halstead_difficulty(0.114)<br>
+	</td>
+</tr>
+<tr>
+	<td>poi-1.5 >> ar5</td>
+	<td>0.804</td>
+	<td>0.938</td>
+	<td>Win</td>
+	<td>
+	wmc>>unique_operators(0.613)<br>
+	loc>>halstead_length(0.172)<br>
+	</td>
+</tr>
+<tr>
+	<td>poi-1.5 >> ar6</td>
+	<td>0.654</td>
+	<td>0.715</td>
+	<td>Win</td>
+	<td>
+	wmc>>unique_operands(0.459)<br>
+	loc>>halstead_volume(0.060)<br>
+	</td>
+</tr>
+<tr>
+	<td>poi-1.5 >> Safe</td>
+	<td>0.706</td>
+	<td>0.660</td>
+	<td>Loss</td>
+	<td>
+	wmc>>AvgLineCode(0.391)<br>
+	loc>>CountLine(0.053)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> ar1</td>
+	<td>0.582</td>
+	<td>0.736</td>
+	<td>Win</td>
+	<td>
+	CountLineCodeExe>>halstead_time(0.221)<br>
+	CountStmt>>halstead_length(0.153)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> ar3</td>
+	<td>0.574</td>
+	<td>0.835</td>
+	<td>Win</td>
+	<td>
+	CountLineCodeExe>>branch_count(0.058)<br>
+	CountStmtExe>>executable_loc(0.065)<br>
+	CountStmt>>total_loc(0.638)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> ar4</td>
+	<td>0.657</td>
+	<td>0.841</td>
+	<td>Win</td>
+	<td>
+	CountStmt>>total_loc(0.194)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> ar5</td>
+	<td>0.804</td>
+	<td>0.929</td>
+	<td>Win</td>
+	<td>
+	CountLineCodeExe>>executable_loc(0.102)<br>
+	CountStmtExe>>branch_count(0.138)<br>
+	CountStmt>>total_loc(0.621)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> ar6</td>
+	<td>0.654</td>
+	<td>0.630</td>
+	<td>Loss</td>
+	<td>
+	CountLineCodeExe>>halstead_time(0.192)<br>
+	CountStmt>>halstead_length(0.190)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> arc</td>
+	<td>0.670</td>
+	<td>0.670</td>
+	<td>Tie</td>
+	<td>
+	CountStmt>>loc(0.719)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> camel-1.0</td>
+	<td>0.550</td>
+	<td>0.639</td>
+	<td>Win</td>
+	<td>
+	CountStmt>>loc(0.219)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> cm1</td>
+	<td>0.653</td>
+	<td>0.704</td>
+	<td>Win</td>
+	<td>
+	CountStmt>>NUM_OPERANDS(0.116)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> EQ</td>
+	<td>0.583</td>
+	<td>0.782</td>
+	<td>Win</td>
+	<td>
+	CountLineCodeExe>>ck_oo_rfc(0.140)<br>
+	CountStmtExe>>ck_oo_lcom(0.092)<br>
+	CountStmt>>ck_oo_numberOfLinesOfCode(0.316)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> JDT</td>
+	<td>0.795</td>
+	<td>0.693</td>
+	<td>Loss</td>
+	<td>
+	CountStmtExe>>ck_oo_lcom(0.172)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> jm1</td>
+	<td>0.705</td>
+	<td>0.689</td>
+	<td>Loss</td>
+	<td>
+	CountStmt>>HALSTEAD_LENGTH(0.137)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> kc3</td>
+	<td>0.609</td>
+	<td>0.665</td>
+	<td>Win</td>
+	<td>
+	CountStmt>>NUM_OPERANDS(0.123)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> LC</td>
+	<td>0.575</td>
+	<td>0.655</td>
+	<td>Win</td>
+	<td>
+	CountStmt>>ck_oo_numberOfLinesOfCode(0.109)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> mc2</td>
+	<td>0.646</td>
+	<td>0.686</td>
+	<td>Win</td>
+	<td>
+	CountStmt>>NUM_OPERANDS(0.411)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> ML</td>
+	<td>0.734</td>
+	<td>0.692</td>
+	<td>Loss</td>
+	<td>
+	CountStmt>>ck_oo_numberOfLinesOfCode(0.093)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> pc2</td>
+	<td>0.748</td>
+	<td>0.871</td>
+	<td>Win</td>
+	<td>
+	CountStmt>>HALSTEAD_PROG_TIME(0.273)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> pc4</td>
+	<td>0.900</td>
+	<td>0.682</td>
+	<td>Loss</td>
+	<td>
+	CountStmt>>HALSTEAD_LENGTH(0.061)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> PDE</td>
+	<td>0.684</td>
+	<td>0.693</td>
+	<td>Win</td>
+	<td>
+	CountStmtExe>>ck_oo_lcom(0.167)<br>
+	CountStmt>>ck_oo_numberOfLinesOfCode(0.136)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> poi-1.5</td>
+	<td>0.707</td>
+	<td>0.723</td>
+	<td>Win</td>
+	<td>
+	CountStmtExe>>lcom(0.273)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.694</td>
+	<td>Win</td>
+	<td>
+	CountLineCodeExe>>amc(0.246)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> velocity-1.4</td>
+	<td>0.725</td>
+	<td>0.391</td>
+	<td>Loss</td>
+	<td>
+	CountStmt>>loc(0.064)<br>
+	</td>
+</tr>
+<tr>
+	<td>Safe >> xerces-1.2</td>
+	<td>0.624</td>
+	<td>0.483</td>
+	<td>Loss</td>
+	<td>
+	CountLineCodeExe>>lcom(0.063)<br>
+	CountStmt>>loc(0.200)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> Apache</td>
+	<td>0.714</td>
+	<td>0.706</td>
+	<td>Loss</td>
+	<td>
+	rfc>>MaxCyclomaticStrict(0.373)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> ar1</td>
+	<td>0.582</td>
+	<td>0.739</td>
+	<td>Win</td>
+	<td>
+	rfc>>total_operands(0.258)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> ar3</td>
+	<td>0.574</td>
+	<td>0.821</td>
+	<td>Win</td>
+	<td>
+	rfc>>blank_loc(0.121)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> ar4</td>
+	<td>0.657</td>
+	<td>0.820</td>
+	<td>Win</td>
+	<td>
+	rfc>>blank_loc(0.181)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> ar5</td>
+	<td>0.804</td>
+	<td>0.911</td>
+	<td>Win</td>
+	<td>
+	rfc>>executable_loc(0.149)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> ar6</td>
+	<td>0.654</td>
+	<td>0.615</td>
+	<td>Loss</td>
+	<td>
+	rfc>>total_operands(0.122)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> cm1</td>
+	<td>0.653</td>
+	<td>0.645</td>
+	<td>Loss</td>
+	<td>
+	rfc>>PERCENT_COMMENTS(0.125)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> EQ</td>
+	<td>0.583</td>
+	<td>0.771</td>
+	<td>Win</td>
+	<td>
+	rfc>>ck_oo_rfc(0.273)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> JDT</td>
+	<td>0.795</td>
+	<td>0.785</td>
+	<td>Loss</td>
+	<td>
+	rfc>>ck_oo_wmc(0.207)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> jm1</td>
+	<td>0.705</td>
+	<td>0.688</td>
+	<td>Loss</td>
+	<td>
+	rfc>>NUM_OPERANDS(0.177)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> LC</td>
+	<td>0.575</td>
+	<td>0.641</td>
+	<td>Win</td>
+	<td>
+	rfc>>ck_oo_rfc(0.111)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> mc2</td>
+	<td>0.646</td>
+	<td>0.660</td>
+	<td>Win</td>
+	<td>
+	rfc>>NUM_UNIQUE_OPERANDS(0.082)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> ML</td>
+	<td>0.734</td>
+	<td>0.692</td>
+	<td>Loss</td>
+	<td>
+	rfc>>ck_oo_rfc(0.343)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> pc4</td>
+	<td>0.900</td>
+	<td>0.678</td>
+	<td>Loss</td>
+	<td>
+	rfc>>NUM_OPERANDS(0.132)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> PDE</td>
+	<td>0.684</td>
+	<td>0.667</td>
+	<td>Loss</td>
+	<td>
+	rfc>>ck_oo_lcom(0.068)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> Safe</td>
+	<td>0.706</td>
+	<td>0.837</td>
+	<td>Win</td>
+	<td>
+	rfc>>CountLineBlank(0.705)<br>
+	</td>
+</tr>
+<tr>
+	<td>skarbonka >> ZXing</td>
+	<td>0.605</td>
+	<td>0.650</td>
+	<td>Win</td>
+	<td>
+	rfc>>CountSemicolon(0.149)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> Apache</td>
+	<td>0.714</td>
+	<td>0.762</td>
+	<td>Win</td>
+	<td>
+	loc>>CountSemicolon(0.226)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> ar1</td>
+	<td>0.582</td>
+	<td>0.739</td>
+	<td>Win</td>
+	<td>
+	rfc>>total_operands(0.112)<br>
+	loc>>halstead_volume(0.166)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> ar4</td>
+	<td>0.657</td>
+	<td>0.820</td>
+	<td>Win</td>
+	<td>
+	rfc>>blank_loc(0.087)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> ar5</td>
+	<td>0.804</td>
+	<td>0.946</td>
+	<td>Win</td>
+	<td>
+	rfc>>blank_loc(0.184)<br>
+	loc>>halstead_length(0.105)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> ar6</td>
+	<td>0.654</td>
+	<td>0.615</td>
+	<td>Loss</td>
+	<td>
+	rfc>>total_operands(0.477)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> LC</td>
+	<td>0.575</td>
+	<td>0.641</td>
+	<td>Win</td>
+	<td>
+	rfc>>ck_oo_rfc(0.293)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> mc2</td>
+	<td>0.646</td>
+	<td>0.660</td>
+	<td>Win</td>
+	<td>
+	rfc>>NUM_UNIQUE_OPERANDS(0.153)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> Safe</td>
+	<td>0.706</td>
+	<td>0.874</td>
+	<td>Win</td>
+	<td>
+	rfc>>CountStmtDecl(0.883)<br>
+	loc>>CountLine(0.387)<br>
+	</td>
+</tr>
+<tr>
+	<td>tomcat >> ZXing</td>
+	<td>0.605</td>
+	<td>0.650</td>
+	<td>Win</td>
+	<td>
+	rfc>>CountSemicolon(0.249)<br>
+	</td>
+</tr>
+<tr>
+	<td>xalan-2.4 >> Apache</td>
+	<td>0.714</td>
+	<td>0.762</td>
+	<td>Win</td>
+	<td>
+	loc>>CountStmt(0.432)<br>
+	</td>
+</tr>
+<tr>
+	<td>xalan-2.4 >> ar1</td>
+	<td>0.582</td>
+	<td>0.736</td>
+	<td>Win</td>
+	<td>
+	loc>>halstead_volume(0.296)<br>
+	</td>
+</tr>
+<tr>
+	<td>xalan-2.4 >> ar3</td>
+	<td>0.574</td>
+	<td>0.830</td>
+	<td>Win</td>
+	<td>
+	loc>>halstead_length(0.164)<br>
+	</td>
+</tr>
+<tr>
+	<td>xalan-2.4 >> ar5</td>
+	<td>0.804</td>
+	<td>0.875</td>
+	<td>Win</td>
+	<td>
+	loc>>halstead_length(0.395)<br>
+	max_cc>>design_complexity(0.146)<br>
+	</td>
+</tr>
+<tr>
+	<td>xalan-2.4 >> ar6</td>
+	<td>0.654</td>
+	<td>0.653</td>
+	<td>Loss</td>
+	<td>
+	loc>>halstead_volume(0.124)<br>
+	</td>
+</tr>
+<tr>
+	<td>xalan-2.4 >> mc2</td>
+	<td>0.646</td>
+	<td>0.688</td>
+	<td>Win</td>
+	<td>
+	loc>>HALSTEAD_LENGTH(0.163)<br>
+	</td>
+</tr>
+<tr>
+	<td>xalan-2.4 >> Safe</td>
+	<td>0.706</td>
+	<td>0.829</td>
+	<td>Win</td>
+	<td>
+	loc>>CountLine(0.341)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> ant-1.3</td>
+	<td>0.609</td>
+	<td>0.704</td>
+	<td>Win</td>
+	<td>
+	CountLineBlank>>npm(0.060)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> ar1</td>
+	<td>0.582</td>
+	<td>0.764</td>
+	<td>Win</td>
+	<td>
+	CountLineBlank>>halstead_difficulty(0.143)<br>
+	CountLineCodeDecl>>total_loc(0.154)<br>
+	CountLineCode>>halstead_length(0.231)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> ar3</td>
+	<td>0.574</td>
+	<td>0.830</td>
+	<td>Win</td>
+	<td>
+	CountLineCodeDecl>>halstead_difficulty(0.368)<br>
+	CountLineCode>>executable_loc(0.368)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> ar4</td>
+	<td>0.657</td>
+	<td>0.782</td>
+	<td>Win</td>
+	<td>
+	CountLineCodeDecl>>halstead_difficulty(0.085)<br>
+	CountLineCode>>total_operands(0.473)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> ar5</td>
+	<td>0.804</td>
+	<td>0.929</td>
+	<td>Win</td>
+	<td>
+	CountLineBlank>>cyclomatic_complexity(0.197)<br>
+	CountLineCodeDecl>>halstead_difficulty(0.797)<br>
+	CountLineCode>>total_loc(0.676)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> ar6</td>
+	<td>0.654</td>
+	<td>0.615</td>
+	<td>Loss</td>
+	<td>
+	CountLineBlank>>halstead_difficulty(0.208)<br>
+	CountLineCodeDecl>>total_operands(0.107)<br>
+	CountLineCode>>halstead_length(0.058)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> arc</td>
+	<td>0.670</td>
+	<td>0.710</td>
+	<td>Win</td>
+	<td>
+	CountLineBlank>>wmc(0.068)<br>
+	CountLineCodeDecl>>rfc(0.112)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> camel-1.0</td>
+	<td>0.550</td>
+	<td>0.694</td>
+	<td>Win</td>
+	<td>
+	CountLineCodeDecl>>rfc(0.282)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> LC</td>
+	<td>0.575</td>
+	<td>0.655</td>
+	<td>Win</td>
+	<td>
+	CountLineCode>>ck_oo_numberOfLinesOfCode(0.157)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> mc2</td>
+	<td>0.646</td>
+	<td>0.701</td>
+	<td>Win</td>
+	<td>
+	CountLineCode>>NUMBER_OF_LINES(0.378)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> pc4</td>
+	<td>0.900</td>
+	<td>0.685</td>
+	<td>Loss</td>
+	<td>
+	CountLineCode>>NUM_OPERATORS(0.206)<br>
+	</td>
+</tr>
+<tr>
+	<td>ZXing >> skarbonka</td>
+	<td>0.569</td>
+	<td>0.717</td>
+	<td>Win</td>
+	<td>
+	CountLineBlank>>wmc(0.297)<br>
+	</td>
+</tr>
+
+
+</table>
+</section>
 </body>
 </html>
