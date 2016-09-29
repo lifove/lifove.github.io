@@ -5,7 +5,7 @@
 <body>
 <h1>Online Appendix for Heterogeneous Defect Prediction (HDP)</h1>
 <section id="mm">
-<h2>Matched metrics in HDP</h2>
+<h2>A. Matched metrics in HDP</h2>
 	<h3>Matched Metrics by KSAnalyzer, cutoff=0.05, and Gain Ratio feature selection</h3>
 	[<a href=data/matched_metrics_KS_0.05_GainRatio.txt target=_NEW>Download</a>]<br>
 	<br>
@@ -26,7 +26,7 @@ Line format: [source]_[target]_[Analyzer]:([# of source metrics including a clas
 </ul>
 </section>
 <section id="cm">
-<h2>Common Metrics among Data Groups</h2>
+<h2>B. Common Metrics among Data Groups</h2>
   
 <table border=1>
 <tr>
@@ -681,7 +681,7 @@ normalized_cyclomatic_complexity : NORMALIZED_CYLOMATIC_COMPLEXITY<br></td>
 </section>
 
 <section id=rl>
-<h2>CPDP-CM and CPDP-RL vs. HDP</h2>
+<h2>C. CPDP-CM and CPDP-RL vs. HDP</h2>
 There might be bias in prediction results when defect ratio is very high. Thus, we conducted an additional experiment for CPDP-CM with random labels, i.e., CPDP-RL. To make sure, HDP performance in terms of AUC works well by the metric matchings that follows the defect-proneness tendency (the higher metric values, the more defect-proneness) but not affected by defect ratio of a dataset. As the following table shows, AUC values in CPDP-RL are consistent, about 0.500. The AUC of 0.500 represents random prediction results so that random labeling clearly leads those like random prediction models. This results shows defect ratios do not affect prediction results in terms of AUC.
 <br><br>
 <table border=1>
