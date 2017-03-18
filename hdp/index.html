@@ -3968,7 +3968,58 @@ There might be bias in prediction results when defect ratio is very high. Thus, 
 
 </table>
 </section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h2>E. Various analyzers and cutoffs</h2>
+<table border=1>
+	<tr>
+		<th>Analyzer</th>
+		<th>Cutoff</th>
+		<th>WPDP</th>
+		<th>CPDP-CM</th>
+		<th>CPDP-IFS</th>
+		<th>UDP</th>
+		<th>HDP</th>
+		<th>Target Coverage</th>
+	</tr>
+	<tr>
+		<td>KSAnalyzer</td>	<td>0.01</td>	<td><b>0.732</b></td>	<td>0.629</td>	<td>0.552</td>	<td>0.683</td>	<td><u>0.694</u>*</td>	<td>34(100%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.05</td>	<td><b>0.732</b></td>	<td>0.632</td>	<td>0.558</td>	<td>0.702</td>	<td><u>0.711</u>*&</td>	<td>34(100%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.1</td>	<td><b>0.732</b></td>	<td>0.629</td>	<td>0.566</td>	<td>0.693</td>	<td><u>0.720</u>*&</td>	<td>33(97%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.2</td>	<td>0.732</td>	<td>0.637</td>	<td>0.571</td>	<td>0.712</td>	<td><u>0.731</u>*&</td>	<td>32(94%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.3</td>	<td>0.732</td>	<td>0.649</td>	<td>0.568</td>	<td>0.693</td>	<td><u>0.731</u>*&</td>	<td>29(85%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.4</td>	<td>0.732</td>	<td>0.641</td>	<td>0.562</td>	<td>0.693</td>	<td><u>0.721</u>*&</td>	<td>28(82%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.5</td>	<td>0.732</td>	<td>0.660</td>          <td>0.566</td> <td>0.750&</td>	<td><u>0.740</u>*</td>	<td>23(68%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.6</td>	<td>0.732</td>	<td>0.669</td>	<td>0.566</td>	<td>0.750&</td>	<td><u>0.717</u>*</td>	<td>19(56%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.7</td>	<td>0.741</td>	<td>0.679</td>	<td>0.575</td>	<td>0.750</td>	<td><u>0.790</u>*&</td>	<td>18(53%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.8</td>	<td>0.741</td>	<td>0.696</td>	<td>0.585</td>	<td>0.750</td>	<td><u>0.833</u>*</td>	<td>11(32%)</td></tr>
+		<tr><td>KSAnalyzer</td>	<td>0.9</td>	<td>0.816</td>	<td>0.588</td>	<td>0.585</td>	<td>0.786</td>	<td><u>0.831</u>*</td>	<td>7(21%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.01</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.638*</td>	<td>34(100%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.05</td>	<td><b>0.741</b></td>	<td>0.655</td>	<td>0.520</td>	<td>0.693&</td>	<td>0.642*</td>	<td>34(100%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.1</td>	<td><b>0.741</b></td>	<td>0.655</td>	<td>0.520</td>	<td>0.693&</td>	<td>0.644*</td>	<td>34(100%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.2</td>	<td><b>0.741</b></td>	<td>0.654</td>	<td>0.520</td>	<td>0.688&</td>	<td>0.650*</td>	<td>34(100%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.3</td>	<td><b>0.741</b></td>	<td>0.654</td>	<td>0.528</td>	<td>0.693&</td>	<td>0.653*</td>	<td>34(100%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.4</td>	<td><b>0.741</b></td>	<td>0.654</td>	<td>0.528</td>	<td>0.693&</td>	<td>0.661*</td>	<td>34(100%)</td></tr>
+
+		<tr><td>PAnalyzer</td>	<td>0.5</td>	<td><b>0741</b></td>	<td>0.654</td>	<td>0.531</td>	<td>0.683&</td>	<td><u>0.667*</u></td>	<td>34(100%)</td></tr>
+
+		<tr><td>PAnalyzer</td>	<td>0.6</td>	<td><b>0.741</b></td>	<td>0.654</td>	<td>0.535</td>	<td>0.683&</td>	<td><u>0.675</u>*</td>	<td>34(100%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.7</td>	<td><b>0.741</b></td>	<td>0.650</td>	<td>0.541</td>	<td>0.681&</td>	<td><u>0.673</u>*</td>	<td>34(100%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.8</td>	<td><b>0.732</b></td>	<td>0.639</td>	<td>0.544</td>	<td>0.681</td>	<td><u>0.674</u>*</td>	<td>34(100%)</td></tr>
+		<tr><td>PAnalyzer</td>	<td>0.9</td>	<td><b>0.732</b></td>	<td>0.629</td>	<td>0.558</td>	<td>0.680</td>	<td><u>0.693</u>*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.01</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.609*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.05</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.609*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.1</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.609*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.2</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.609*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.3</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.603*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.4</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.603*</td>	<td>34(100%)</td></tr>
+
+		<tr><td>SCoAnalyzer</td>	<td>0.5</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.604*</td>	<td>34(100%)</td></tr>
+
+		<tr><td>SCoAnalyzer</td>	<td>0.6</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.603*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.7</td>	<td><b>0.741</b></td>	<td><u>0.655</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.605*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.8</td>	<td><b>0.741</b></td>	<td><u>0.654</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.613*</td>	<td>34(100%)</td></tr>
+		<tr><td>SCoAnalyzer</td>	<td>0.9</td>	<td><b>0.741</b></td>	<td><u>0.654</u></td>	<td>0.520</td>	<td>0.693&</td>	<td>0.614*</td>	<td>34(100%)</td></tr>
+</table>
+<br><br>
 <iframe width=0  src='http://www.lifove.net/log/writelog.php?from=GitHubHDP' scrolling=no frameborder=0 height=0></iframe>
 </body>
 </html>
