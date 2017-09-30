@@ -54,7 +54,7 @@
 		var t=d.getTime();
 
 		// change startTime in a new place and put dayIncrement in the new place
-		var startTime = 1441843200000; //http://www.fileformat.info/tip/java/date2millis.htm 2015/09/10 // 2015/08/13   1325999001896; // 2012/01/08
+		var startTime = 1506729600000; //http://www.fileformat.info/tip/java/date2millis.htm 2015/09/10 // 2015/08/13   1325999001896; // 2012/01/08
 		var dayIncrement = Math.round(t/days - startTime/days);
 
 		google.load('visualization', '1', {'packages': ['geochart']});
@@ -65,9 +65,9 @@
 		data.addColumn('string', 'Country');
 		data.addColumn('number', '#Days (approximated)');
 		data.addRows([
-		['South Korea', 10277],
-		['Canada', 1+dayIncrement-23],
-		['United States', 63],
+		['South Korea', 10297 + dayIncrement ],
+		['Canada', 677],
+		['United States', 79],
 		['Italy', 7],
 		['Sweden', 500],
 		['Denmark', 4],
